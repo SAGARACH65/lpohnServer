@@ -1,14 +1,14 @@
-var mongoose = require('mongoose');
+let mongoose = require('mongoose');
 
 //Define a schema
-var Schema = mongoose.Schema;
+let Schema = mongoose.Schema;
 
-var NewsSchema = new Schema({
+let NewsSchema = new Schema({
     //tag specfies the area of intrest to whom the news is to be sent
-    tag:String,
+    tag: String,
     title: String,
     a_date: Date,
-    news:String
+    news: String
 });
 
-module.exports = mongoose.model('CurrentNews', NewsSchema );
+module.exports = mongoose.model('CurrentNews', NewsSchema);
