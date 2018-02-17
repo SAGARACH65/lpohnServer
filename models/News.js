@@ -9,6 +9,7 @@ let NewsSchema = new Schema({
     title: String,
     a_date: Date,
     news: String
+
 });
 
 module.exports = mongoose.model('CurrentNews', NewsSchema);

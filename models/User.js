@@ -2,7 +2,7 @@ let mongoose = require('mongoose');
 let bcrypt = require('bcrypt');
 //Define a schema
 let Schema = mongoose.Schema;
-const saltRounds = 1;
+const saltRounds = 10;
 let UserSchema = new Schema({
     username: {
         type: String,
@@ -22,25 +22,46 @@ let UserSchema = new Schema({
     },
     tags: [{
         //name of the intrested tag initially assigned
-        type:String
+        type: String
 
     }],
-    token: Number,
+    token: String,
     password: String,
-    salt: String
+    //setting the current date of the server
+    registeredDate: {type: Date, default: Date.now}
+
 });
- module.exports = mongoose.model('Users', UserSchema);
+let User = module.exports = mongoose.model('Users', UserSchema);
+
+
+module.exports.getUserByUsername = function (username, callback) {
+    let query = {username: username};
+    User.findOne(query, callback);
+};
+module.exports.getUserByEmail = function (email, callback) {
+    let query = {email: email};
+    User.findOne(query, callback);
+};
+
+module.exports.getUserById = function (id, callback) {
+    User.findById(id, callback);
+};
 
 module.exports.createUser = function (newUser, callback) {
     bcrypt.genSalt(saltRounds, function (err, salt) {
         bcrypt.hash(newUser.password, salt, function (err, hash) {
             newUser.password = hash;
-            newUser.salt = salt;
-
             // for (let i = 0; i < newUser.tags_temp.length; i++) {
             //     newUser.tags.push();
             // }
             newUser.save(callback);
         });
     });
-}
+};
+
+module.exports.comparePassword = function (candidatePassword, hash, callback) {
+    bcrypt.compare(candidatePassword, hash, function (err, isMatch) {
+        if (err) throw err;
+        callback(null, isMatch);
+    });
+};

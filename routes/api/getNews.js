@@ -10,8 +10,6 @@ router.use('/', function (req, res, next) {
 
 router.get('/', function (req, res, next) {
 
-let hello=req.query;
-    res.render('index', {title: req.query   });
 
 });
 
