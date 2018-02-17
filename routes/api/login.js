@@ -2,8 +2,8 @@ let express = require('express');
 let router = express.Router();
 let passport = require('passport');
 let LocalStrategy = require('passport-local').Strategy;
-const url = require('url');
-const jwt = require('jsonwebtoken')
+
+const jwt = require('jsonwebtoken');
 let User = require('../../models/User');
 
 function validateEmail(email) {
@@ -22,15 +22,24 @@ passport.use(new LocalStrategy({passReqToCallback: true},
             User.getUserByEmail(username, function (err, user) {
                 if (err) throw err;
                 if (!user) {
-                    return done(null, false, {message: 'Unknown User'});
+                    return done(null, false, {status: "fail", message: 'Unknown User'});
                 }
 
                 User.comparePassword(password, user.password, function (err, isMatch) {
                     if (err) throw err;
                     if (isMatch) {
-                        return done(null, user);
+                        const token = jwt.sign(user.toJSON(), 'your_jwt_secret');
+                        //putitng the token back in the dataabse
+                        user.token = token;
+
+
+                        return done(null, user, {
+                            status: "success",
+                            token: token
+                        });
+
                     } else {
-                        return done(null, false, {message: 'Invalid password'});
+                        return done(null, false, {status: "fail", message: 'Invalid password'});
                     }
                 });
             });
@@ -49,11 +58,13 @@ passport.use(new LocalStrategy({passReqToCallback: true},
                         user.token = token;
 
 
-                        return done(null, user,{ status: "success",
-                            token: token});
+                        return done(null, user, {
+                            status: "success",
+                            token: token
+                        });
                     } else {
-                      //  sendErrorMessage();
-                        return done(null, false, {message: 'Invalid password'});
+                        //  sendErrorMessage();
+                        return done(null, false, {status: "fail", message: 'Invalid password'});
                     }
                 });
             });
@@ -72,26 +83,30 @@ passport.deserializeUser(function (id, done) {
 });
 
 
-router.post('/',function(req, res, next){
-    if(!req.body.user.email||!req.){
-        return res.status(422).json({errors: {email: "can't be blank"}});
+router.post('/', function (req, res, next) {
+    if (!req.body.username) {
+        return res.status(422).json({status: "fail", errors: {email: "can't be blank"}});
     }
 
-    if(!req.body.user.password){
-        return res.status(422).json({errors: {password: "can't be blank"}});
+    if (!req.body.password) {
+        return res.status(422).json({status: "fail", errors: {password: "can't be blank"}});
     }
 
-    passport.authenticate('local', {session: false}, function(err, user, info){
-        if(err){ return res.json({
-            status:"fail",
-            error:err.message
-        }); }
+    passport.authenticate('local', {session: false}, function (err, user, info) {
+        if (err) {
+            return res.json({
+                status: "fail",
+                error: err.message
+            });
+        }
 
 
-        if(user){
+        if (user) {
 
-            return res.json({status:"success",
-            token:user.token});
+            return res.json({
+                status: "success",
+                token: user.token
+            });
         } else {
             return res.status(422).json(info);
         }
