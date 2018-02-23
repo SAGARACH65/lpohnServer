@@ -50,18 +50,27 @@ passport.use(new LocalStrategy({passReqToCallback: true},
                     return done(null, false, {message: 'Unknown User'});
                 }
 
+
                 User.comparePassword(password, user.password, function (err, isMatch) {
                     if (err) throw err;
                     if (isMatch) {
-                        const token = jwt.sign(user.toJSON(), 'your_jwt_secret');
+                        //limiting size of token to 12
+                        const token_generated = (jwt.sign(user.toJSON(), 'your_jwt_secret'));
+                        const token=token_generated.substr(token_generated.length-15,15);
                         //putitng the token back in the dataabse
-                        user.token = token;
+
+                        User.update({_id: user._id}, {$set: {token: token}},
+                            function (err, count) {
+                                if (err) return done(null, false, {status: "fail", message: 'Server Error'});
+                                else {
+                                    return done(null, user, {
+                                        status: "success",
+                                        token: token
+                                    });
+                                }
+                            });
 
 
-                        return done(null, user, {
-                            status: "success",
-                            token: token
-                        });
                     } else {
                         //  sendErrorMessage();
                         return done(null, false, {status: "fail", message: 'Invalid password'});

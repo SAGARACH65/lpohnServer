@@ -25,7 +25,7 @@ let UserSchema = new Schema({
         type: String
 
     }],
-    token: String,
+    token: {type:String, default:"NA"},
     password: String,
     //setting the current date of the server
     registeredDate: {type: Date, default: Date.now}
@@ -36,6 +36,10 @@ let User = module.exports = mongoose.model('Users', UserSchema);
 
 module.exports.getUserByUsername = function (username, callback) {
     let query = {username: username};
+        User.findOne(query, callback);
+};
+module.exports.getUserByToken = function (token, callback) {
+    let query={token:token};
     User.findOne(query, callback);
 };
 module.exports.getUserByEmail = function (email, callback) {
@@ -46,6 +50,7 @@ module.exports.getUserByEmail = function (email, callback) {
 module.exports.getUserById = function (id, callback) {
     User.findById(id, callback);
 };
+
 
 module.exports.createUser = function (newUser, callback) {
     bcrypt.genSalt(saltRounds, function (err, salt) {
