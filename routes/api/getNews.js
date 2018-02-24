@@ -17,28 +17,29 @@ router.get('/', function (req, res, next) {
         User.getUserByToken(req.query.token || req.body.token, function (err, user) {
             if (err) throw err;
             if (!user) {
-               res.send( {status: "fail", message: 'Unknown Token'});
+                res.send({status: "fail", message: 'Unknown Token'});
             }
 
             //reading user tags and appending them in the response
-            // user.tags.type.forEach((intrest, index) => {
-            //     //making call to newsapi.org
-            //     newsapi.v2.topHeadlines({
-            //         //    sources: 'bbc-news,the-verge',
-            //         q: intrest,
-            //         sortBy: 'publishedAt',       //sortBy: 'relevancy'
-            //         // category: 'business',
-            //         language: 'en'
-            //         // country: 'us'
-            //     }).then(response => {
-            //         jsonResponse.concat(response);
-            //
-            //     });
-            // });
-            // res.send(jsonResponse);
+            user.tags.forEach((intrest, index) => {
+                //making call to newsapi.org
+                newsapi.v2.topHeadlines({
+                    //    sources: 'bbc-news,the-verge',
+                    q: intrest,
+                    sortBy: 'publishedAt',       //sortBy: 'relevancy'
+                    // category: 'business',
+                    language: 'en'
+                    // country: 'us'
+                }).then(response => {
+                    jsonResponse[index] = response;
 
+                    //this is done as foreach doesnot provide a callback
+                    if (index === user.tags.length - 1) {
+                        res.send(jsonResponse);
+                    }
+                });
+            });
         });
-
 
     } else {
         res.send({
@@ -46,7 +47,6 @@ router.get('/', function (req, res, next) {
             message: "token not available"
         });
     }
-
 
 });
 
