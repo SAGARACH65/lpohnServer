@@ -1,4 +1,4 @@
-let mongoose = require('mongoose');
+let mongoose =new  require('mongoose');
 const uuidv4 = require('uuid/v4');
 
 //Define a schema
@@ -38,4 +38,11 @@ module.exports.addQuestion = function (newQuestion, callback) {
 };
 module.exports.addAnswer = function (username,answer, questionID, callback) {
     Questions.update({id:questionID}, {$push: {answers: {answer:answer,answeredBy:username}}}, callback);
+};
+
+module.exports.getQuestions = function (interests, callback) {
+Questions.find({tags:interests},callback);
+
+
+
 };
