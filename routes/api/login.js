@@ -28,15 +28,20 @@ passport.use(new LocalStrategy({passReqToCallback: true},
                 User.comparePassword(password, user.password, function (err, isMatch) {
                     if (err) throw err;
                     if (isMatch) {
-                        const token = jwt.sign(user.toJSON(), 'your_jwt_secret');
+                        const token_generated = (jwt.sign(user.toJSON(), 'your_jwt_secret'));
+                        const token = token_generated.substr(token_generated.length - 15, 15);
                         //putitng the token back in the dataabse
-                        user.token = token;
 
-
-                        return done(null, user, {
-                            status: "success",
-                            token: token
-                        });
+                        User.update({_id: user._id}, {$set: {token: token}},
+                            function (err, count) {
+                                if (err) return done(null, false, {status: "fail", message: 'Server Error'});
+                                else {
+                                    return done(null, user, {
+                                        status: "success",
+                                        token: token
+                                    });
+                                }
+                            });
 
                     } else {
                         return done(null, false, {status: "fail", message: 'Invalid password'});
@@ -56,7 +61,7 @@ passport.use(new LocalStrategy({passReqToCallback: true},
                     if (isMatch) {
                         //limiting size of token to 12
                         const token_generated = (jwt.sign(user.toJSON(), 'your_jwt_secret'));
-                        const token=token_generated.substr(token_generated.length-15,15);
+                        const token = token_generated.substr(token_generated.length - 15, 15);
                         //putitng the token back in the dataabse
 
                         User.update({_id: user._id}, {$set: {token: token}},
@@ -81,7 +86,7 @@ passport.use(new LocalStrategy({passReqToCallback: true},
 
     }));
 
-passport.serializeUser(function (user, done) {
+        passport.serializeUser(function (user, done) {
     done(null, user.id);
 });
 
@@ -111,11 +116,7 @@ router.post('/', function (req, res, next) {
 
 
         if (user) {
-
-            return res.json({
-                status: "success",
-                token: user.token
-            });
+            return res.json(info);
         } else {
             return res.status(422).json(info);
         }

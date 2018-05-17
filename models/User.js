@@ -25,7 +25,7 @@ let UserSchema = new Schema({
         type: String
 
     }],
-    token: {type:String, default:"NA"},
+    token: {type:String},                             //, default:"NA"
     password: String,
     //setting the current date of the server
     registeredDate: {type: Date, default: Date.now}

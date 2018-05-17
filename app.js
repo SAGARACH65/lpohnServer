@@ -31,12 +31,13 @@ let mongoDB = 'mongodb://localhost/lpohn';
 mongoose.connect(mongoDB);
 mongoose.set('debug', true);
 //as moongoses promise is depreciated
-mongoose.Promise=global.Promise;
+mongoose.Promise = global.Promise;
 
 require('./models/User');
 require('./models/News');
 
 app.use(require('./routes'));
+
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
@@ -55,5 +56,7 @@ app.use(function (err, req, res, next) {
     res.status(err.status || 500);
     res.render('error');
 });
-
+app.get('/hello',function(req,res,next){
+    res.send("hello");
+});
 module.exports = app;

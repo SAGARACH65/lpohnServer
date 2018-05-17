@@ -2,7 +2,6 @@ let express = require('express');
 let router = express.Router();
 let mongoose = require('mongoose');
 
-// let User = mongoose.model('User');
 let User = require('../../models/User');
 
 
@@ -19,7 +18,7 @@ router.post('/', function (req, res, next) {
         if (err) {
             let output = {
                 error: {
-                    status:"fail",
+                    status: "fail",
                     name: err.name,
                     message: err.message,
                     text: err.toString()
@@ -38,24 +37,3 @@ router.post('/', function (req, res, next) {
 });
 
 module.exports = router;
-
-//     User.create({
-//         username: req.body.username,
-//         email: req.body.username,
-//         password: req.body.password,
-//         tags: req.body.username
-//     }).then(function (msg) {
-//         if (msg) {
-//             console.log("User added");
-//             return res.send({
-//                 status: 200,
-//                 msg: msg
-//
-//             });
-//
-//         }
-//
-//     });
-
-
-

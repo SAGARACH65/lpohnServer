@@ -6,6 +6,7 @@
     "start": "set  node ./bin/www"
   },
   "dependencies": {
+    "adobe-sign-sdk": "^1.1.0",
     "ajax-request": "^1.2.3",
     "bcrypt": "^1.0.3",
     "body-parser": "~1.18.2",
@@ -13,6 +14,7 @@
     "debug": "~2.6.9",
     "express": "~4.15.5",
     "express-validator": "^5.0.0",
+    "image-watermark": "0.0.7",
     "jade": "~1.11.0",
     "jsonwebtoken": "^8.1.1",
     "mongoose": "^5.0.4",
@@ -20,6 +22,7 @@
     "newsapi": "^2.2.0",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
-    "serve-favicon": "~2.4.5"
+    "serve-favicon": "~2.4.5",
+    "uuid": "^3.2.1"
   }
 }
