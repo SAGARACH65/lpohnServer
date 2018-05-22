@@ -17,12 +17,12 @@ router.post('/', function (req, res, next) {
     User.createUser(newUser, function (err, user) {
         if (err) {
             let output = {
-                error: {
+
                     status: "fail",
                     name: err.name,
                     message: err.message,
                     text: err.toString()
-                }
+
             };
             let statusCode = err.status || 500;
             res.status(statusCode).json(output);

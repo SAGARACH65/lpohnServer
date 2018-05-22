@@ -46,10 +46,14 @@ router.get('/', function (req, res, next) {
                     // country: 'us'
                 }).then(response => {
 
-                    jsonResponse.push(response);
+                    response.articles.map((data) => {
+                        jsonResponse.push(data);
+
+                    });
+
                     //this is done as foreach doesnot provide a callback
                     if (index === user.tags.length - 1) {
-                        res.json({msg:JSON.parse(JSON.stringify(jsonResponse))});
+                        res.json(JSON.parse(JSON.stringify(jsonResponse)));
                        // res.json({status: "success",answer:jsonResponse});
                         res.send();
                     }
