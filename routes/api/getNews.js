@@ -32,32 +32,32 @@ router.get('/', function (req, res, next) {
 
 
 
-                //delay is added so that both results are added onto the array
+                //delay is added so that all results are added onto the array
                 setTimeout(function() {
+                    newsapi.v2.topHeadlines({
+                        //    sources: 'bbc-news,the-verge',
+                        q: intrest,
+                        sortBy: 'publishedAt',       //sortBy: 'relevancy'
+                        // category: 'business',
+                        language: 'en'
+                        // country: 'us'
+                    }).then(response => {
 
-                }, 200);
+                        response.articles.map((data) => {
+                            jsonResponse.push(data);
 
-                newsapi.v2.topHeadlines({
-                    //    sources: 'bbc-news,the-verge',
-                    q: intrest,
-                    sortBy: 'publishedAt',       //sortBy: 'relevancy'
-                    // category: 'business',
-                    language: 'en'
-                    // country: 'us'
-                }).then(response => {
+                        });
 
-                    response.articles.map((data) => {
-                        jsonResponse.push(data);
-
+                        //this is done as foreach doesnot provide a callback
+                        if (index === user.tags.length - 1) {
+                            res.json(JSON.parse(JSON.stringify(jsonResponse)));
+                            // res.json({status: "success",answer:jsonResponse});
+                            res.send();
+                        }
                     });
+                }, 300);
 
-                    //this is done as foreach doesnot provide a callback
-                    if (index === user.tags.length - 1) {
-                        res.json(JSON.parse(JSON.stringify(jsonResponse)));
-                       // res.json({status: "success",answer:jsonResponse});
-                        res.send();
-                    }
-                });
+
             });
 
 

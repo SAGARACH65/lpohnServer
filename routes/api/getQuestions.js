@@ -6,15 +6,11 @@ let mongoose = require('mongoose');
 let Questions = require('../../models/Questions');
 let User = require('../../models/User');
 
-let o = {}; // empty Object
-let key = 'data';
-o[key] = []; // empty Array, which you can push() values into
+//as database query brings a lot of repetative data we eliminate questions by tags alredy sent
+let sentTags = [];
 
 let jsonResponse = [];
-/* Note in  this API in response  of each tag is send so the user needs to eliminate the duplicate questions by the question ID
- *
- *
- */
+
 router.post('/', function (req, res, next) {
 
     User.getUserByToken(req.query.token || req.body.token, function (err, user) {
@@ -43,22 +39,19 @@ router.post('/', function (req, res, next) {
                     res.send();
                 }
                 else {
-
-
-
-                    // jsonResponse.push(questions);
-                    o[key].push(questions);
-                    //this is done as foreach doesnot provide a callback
+                    questions.map((data) => {
+                        if (!sentTags.includes(data.id)) {
+                            jsonResponse.push(data);
+                            sentTags.push(data.id);
+                        }
+                    });
 
                     if (i === user.tags.length - 1) {
-                        res.send(JSON.parse(JSON.stringify(o)));
-
+                        res.send(JSON.parse(JSON.stringify(jsonResponse)));
                     }
                 }
             });
         }
-
-
     });
 });
 
