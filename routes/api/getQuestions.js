@@ -19,7 +19,7 @@ router.post('/', function (req, res, next) {
             res.send({status: "fail", message: 'Unknown Token'});
         }
         for (let i = 0; i < user.tags.length; i++) {
-            //delay is added so that both results are added onto the array
+
             setTimeout(function () {
 
             }, 100);
@@ -48,6 +48,7 @@ router.post('/', function (req, res, next) {
 
                     if (i === user.tags.length - 1) {
                         res.send(JSON.parse(JSON.stringify(jsonResponse)));
+
                     }
                 }
             });

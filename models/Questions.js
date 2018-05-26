@@ -43,6 +43,4 @@ module.exports.addAnswer = function (username,answer, questionID, callback) {
 module.exports.getQuestions = function (interests, callback) {
 Questions.find({tags:interests},callback);
 
-
-
 };
