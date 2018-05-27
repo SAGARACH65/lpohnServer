@@ -5,7 +5,6 @@ const uuidv4 = require('uuid/v4');
 let Schema = mongoose.Schema;
 
 let QuestionsSchema = new Schema({
-
     id: {
         type: String,
         unique: true
@@ -14,19 +13,14 @@ let QuestionsSchema = new Schema({
     details: String,
     askedDate: {type: Date, default: Date.now},
     tags: [{
-
         type: String
-
     }],
     askedBy: String,
     answers: [{
-
         answeredBy: String,
         answer: String,
         answeredDate: {type: Date, default: Date.now}
-
     }]
-
 });
 
 let Questions = module.exports = mongoose.model('Questions', QuestionsSchema);
@@ -41,6 +35,5 @@ module.exports.addAnswer = function (username,answer, questionID, callback) {
 };
 
 module.exports.getQuestions = function (interests, callback) {
-Questions.find({tags:interests},callback);
-
+Questions.find({tags:interests},callback).sort({askedDate: 'desc'});
 };
