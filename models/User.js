@@ -92,6 +92,20 @@ module.exports.updateTags = function (token, tags, callback) {
 
 };
 
-module.exports.addLikings = function (username,title,callback) {
-    User.update({username:username}, {$push: {contentLikings: {title: title}}},callback);
+//add the user user watches to their profile
+module.exports.addLikings = function (username, title, callback) {
+    User.update({username: username}, {$push: {contentLikings: {title: title}}}, callback);
+};
+
+
+//updates the profile according to the users likes or dislikes
+module.exports.updateLikings = function (title, like, callback) {
+    User.update({'contentLikings.title': title},
+        {
+            '$set': {
+                'contentLikings.$.value': like,
+
+            }
+        }, callback);
+
 };

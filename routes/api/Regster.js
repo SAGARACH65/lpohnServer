@@ -1,6 +1,6 @@
 let express = require('express');
 let router = express.Router();
-let mongoose = require('mongoose');
+
 
 let User = require('../../models/User');
 
@@ -13,15 +13,15 @@ router.post('/', function (req, res, next) {
         password: req.body.password,
         email: req.body.email,
         tags: req.body.tags,
-       });
+    });
     User.createUser(newUser, function (err, user) {
         if (err) {
             let output = {
 
-                    status: "fail",
-                    name: err.name,
-                    message: err.message,
-                    text: err.toString()
+                status: "fail",
+                name: err.name,
+                message: err.message,
+                text: err.toString()
 
             };
 
@@ -33,11 +33,11 @@ router.post('/', function (req, res, next) {
 
         }
         else {
-
+//TODO update later average user profile
             //adding the average user profile
             let likingQuestions = ['programming is better with node', 'things i regret about node', 'node confrence in eu', 'programming made easier'];
             for (let i = 0; i < likingQuestions.length; i++) {
-                User.addLikings(req.body.username, likingQuestions[i],function (err) {
+                User.addLikings(req.body.username, likingQuestions[i], function (err) {
                 });
             }
 
