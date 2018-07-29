@@ -22,7 +22,6 @@ router.post('/', function (req, res, next) {
                 name: err.name,
                 message: err.message,
                 text: err.toString()
-
             };
 
 

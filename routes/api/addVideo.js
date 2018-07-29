@@ -18,6 +18,7 @@ router.post('/', function (req, res, next) {
             title: req.body.title,
             details: req.body.details,
             uploadedBY: user.username,
+            tags: req.body.tags,
             id:"0"
         });
 

@@ -18,6 +18,7 @@ let VideosSchema = new Schema({
     }],
     uploadedBY: String,
 
+
     //TODO commentts add later
     // answers: [{
     //     answeredBy: String,
@@ -48,5 +49,11 @@ module.exports.addVideo = function (newVideo, callback) {
 module.exports.getVideos = function (userProfile, callback) {
 
     //TODO call the recommender engine here and send back to the user
-    Videos.find({tags: interests}, callback).sort({askedDate: 'desc'});
+    Videos.find({},function (err,videos) {
+
+        //send videos list and videos to the recommendation engine for evaluation
+    });
+
+
+    //Videos.find({tags: interests}, callback).sort({askedDate: 'desc'});
 };
