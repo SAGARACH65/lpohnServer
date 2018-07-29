@@ -20,13 +20,25 @@ let UserSchema = new Schema({
         match: [/\S+@\S+\.\S+/, 'is invalid'],
         index: true
     },
+    //tags is used only for news
     tags: [{
         //name of the intrested tag initially assigned
         type: String
 
     }],
-    token: {type:String},                             //, default:"NA"
+    //this is used for recomender engine, all the articles and videos the user likes are upadated here
+    //it is hte user profile for vector mul withtiplication
+    contentLikings: [{
+
+        title: String,
+        value: {type: Number, default: -1},
+
+
+    }],
+
+    token: {type: String},                             //, default:"NA"
     password: String,
+
     //setting the current date of the server
     registeredDate: {type: Date, default: Date.now}
 
@@ -36,10 +48,10 @@ let User = module.exports = mongoose.model('Users', UserSchema);
 
 module.exports.getUserByUsername = function (username, callback) {
     let query = {username: username};
-        User.findOne(query, callback);
+    User.findOne(query, callback);
 };
 module.exports.getUserByToken = function (token, callback) {
-    let query={token:token};
+    let query = {token: token};
     User.findOne(query, callback);
 };
 module.exports.getUserByEmail = function (email, callback) {
@@ -56,17 +68,30 @@ module.exports.createUser = function (newUser, callback) {
     bcrypt.genSalt(saltRounds, function (err, salt) {
         bcrypt.hash(newUser.password, salt, function (err, hash) {
             newUser.password = hash;
-            // for (let i = 0; i < newUser.tags_temp.length; i++) {
-            //     newUser.tags.push();
+            //
+            // //for average user profile
+            // //implicitly adding average user profile
+
             // }
             newUser.save(callback);
+
         });
     });
 };
+
 
 module.exports.comparePassword = function (candidatePassword, hash, callback) {
     bcrypt.compare(candidatePassword, hash, function (err, isMatch) {
         if (err) throw err;
         callback(null, isMatch);
     });
+};
+
+module.exports.updateTags = function (token, tags, callback) {
+    User.update({token: token}, {tags: tags}, callback);
+
+};
+
+module.exports.addLikings = function (username,title,callback) {
+    User.update({username:username}, {$push: {contentLikings: {title: title}}},callback);
 };

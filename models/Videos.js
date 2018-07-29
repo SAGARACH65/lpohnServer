@@ -5,18 +5,18 @@ let User = require('./User');
 //Define a schema
 let Schema = mongoose.Schema;
 
-let QuestionsSchema = new Schema({
+let VideosSchema = new Schema({
     id: {
         type: String,
         unique: true
     },
     title: String,
     details: String,
-    askedDate: {type: Date, default: Date.now},
+    uploadedDate: {type: Date, default: Date.now},
     tags: [{
         type: String
     }],
-    askedBy: String,
+    uploadedBY: String,
     answers: [{
         answeredBy: String,
         answer: String,
@@ -24,11 +24,11 @@ let QuestionsSchema = new Schema({
     }]
 });
 
-let Questions = module.exports = mongoose.model('Questions', QuestionsSchema);
+let Videos = module.exports = mongoose.model('Videos', VideosSchema);
 
-module.exports.addQuestion = function (newQuestion, token, newTags, savedTags, callback) {
+module.exports.addVideo = function (newVideo, token, newTags, savedTags, callback) {
     //generating a new random id for each question
-    newQuestion.id = uuidv4();
+    newVideo.id = uuidv4();
     //adding updated tags to the old tags
     newTags.map(value => {
         if (!savedTags.includes(value)) {
@@ -36,7 +36,7 @@ module.exports.addQuestion = function (newQuestion, token, newTags, savedTags, c
         }
 
     });
-    newQuestion.save().then(function (value) {
+    newVideo.save().then(function (value) {
 
         User.updateTags(token, savedTags, callback);
 
@@ -44,10 +44,8 @@ module.exports.addQuestion = function (newQuestion, token, newTags, savedTags, c
         // rejection
     });
 };
-module.exports.addAnswer = function (username, answer, questionID, callback) {
-    Questions.update({id: questionID}, {$push: {answers: {answer: answer, answeredBy: username}}}, callback);
-};
 
-module.exports.getQuestions = function (interests, callback) {
-    Questions.find({tags: interests}, callback).sort({askedDate: 'desc'});
+
+module.exports.getVideos = function (interests, callback) {
+    Videos.find({tags: interests}, callback).sort({askedDate: 'desc'});
 };

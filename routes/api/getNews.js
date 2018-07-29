@@ -6,8 +6,6 @@ let User = require('../../models/User');
 const NewsAPI = require('newsapi');
 const newsapi = new NewsAPI('4c8d1cf5242a4f4a807d0974f79871c5');
 
-//myToken:4c8d1cf5242a4f4a807d0974f79871c5
-//site:https://newsapi.org/
 router.get('/', function (req, res, next) {
     let jsonResponse = [];
     if (req.query.token || req.body.token) {

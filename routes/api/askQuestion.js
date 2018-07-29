@@ -23,7 +23,7 @@ router.post('/', function (req, res, next) {
             id:"0"
         });
 
-        Questions.addQuestion(newQuestion, function (err, question) {
+        Questions.addQuestion(newQuestion,req.body.token,req.body.tags,user.tags,function (err, question) {
             if (err) {
                 let output = {
                     error: {

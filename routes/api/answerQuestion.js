@@ -16,7 +16,7 @@ router.post('/', function (req, res, next) {
             res.send({status: "fail", message: 'Unknown Token'});
         }
 
-        Questions.addAnswer(user.username,req.body.answer, req.body.id, function (err) {
+        Questions.addAnswer(user.username, req.body.answer, req.body.id, function (err) {
             if (err) {
                 let output = {
                     error: {
