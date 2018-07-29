@@ -17,35 +17,36 @@ let VideosSchema = new Schema({
         type: String
     }],
     uploadedBY: String,
-    answers: [{
-        answeredBy: String,
-        answer: String,
-        answeredDate: {type: Date, default: Date.now}
-    }]
+
+    //TODO commentts add later
+    // answers: [{
+    //     answeredBy: String,
+    //     answer: String,
+    //     answeredDate: {type: Date, default: Date.now}
+    // }]
 });
 
 let Videos = module.exports = mongoose.model('Videos', VideosSchema);
 
-module.exports.addVideo = function (newVideo, token, newTags, savedTags, callback) {
-    //generating a new random id for each question
+module.exports.addVideo = function (newVideo, callback) {
+    //generating a new random id for each video
     newVideo.id = uuidv4();
+
     //adding updated tags to the old tags
-    newTags.map(value => {
-        if (!savedTags.includes(value)) {
-            savedTags.push(value);
-        }
+    // newTags.map(value => {
+    //     if (!savedTags.includes(value)) {
+    //         savedTags.push(value);
+    //     }
+    //
+    // });
 
-    });
-    newVideo.save().then(function (value) {
+    newVideo.save(callback);
 
-        User.updateTags(token, savedTags, callback);
-
-    }, function (reason) {
-        // rejection
-    });
 };
 
 
-module.exports.getVideos = function (interests, callback) {
+module.exports.getVideos = function (userProfile, callback) {
+
+    //TODO call the recommender engine here and send back to the user
     Videos.find({tags: interests}, callback).sort({askedDate: 'desc'});
 };

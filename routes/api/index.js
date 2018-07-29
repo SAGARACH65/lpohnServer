@@ -10,4 +10,6 @@ router.use('/getQuestions',require('./getQuestions'));
 router.use('/addLikeDislike',require('./likeDislikeVideo'));
 router.use('/login', require('./login'));
 router.use('/viewVids', require('./viewedVideo'));
+router.use('/addVideo', require('./addVideo'));
+router.use('/getVideo', require('./getVideo'));
 module.exports = router;
