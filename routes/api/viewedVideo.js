@@ -16,7 +16,7 @@ router.post('/', function (req, res, next) {
             res.send({status: "fail", message: 'Unknown Token'});
         }
 
-        User.addLikings(user.username, req.body.title, function (err, user) {
+        User.addLikings(user.username, user.contentLikings,req.body.title, function (err, user) {
             if (err) {
                 let output = {
                     error: {

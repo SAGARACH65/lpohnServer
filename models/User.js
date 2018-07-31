@@ -1,8 +1,11 @@
 let mongoose = require('mongoose');
 let bcrypt = require('bcrypt');
 //Define a schema
+let Videos = require('./Videos');
 let Schema = mongoose.Schema;
 const saltRounds = 10;
+
+
 let UserSchema = new Schema({
     username: {
         type: String,
@@ -92,8 +95,27 @@ module.exports.updateTags = function (token, tags, callback) {
 };
 
 //add the user user watches to their profile
-module.exports.addLikings = function (username, title, callback) {
-    User.update({username: username}, {$push: {contentLikings: {title: title}}}, callback);
+module.exports.addLikings = function (username, likings, title, callback) {
+
+
+    //TODO later fix this thing
+    // this is a brute force thing
+    //i have made a mechanism to add all the videos in contentLikings whenever a user watches a video.
+    //i.e whenever a user watches a video all of the new videos in the system will be integated and added into his profile
+    let videos = Videos.returnVideos();
+    videos.map((item) => {
+        let isPresent = false;
+        let obj = {};
+        likings.map(x => {
+            if (x.title === item.title) isPresent = true;
+        });
+        if (!isPresent) {
+            obj['title'] = item.title;
+            obj['value'] = 0
+        }
+        likings.push(obj);
+    });
+    User.update({username: username}, {contentLikings: likings}, callback);
 };
 
 

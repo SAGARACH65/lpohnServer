@@ -13,31 +13,7 @@ router.post('/', function (req, res, next) {
             res.send({status: "fail", message: 'Unknown Token'});
         }
 
-        Videos.getVideos(user.contentLikings, function (err, videos) {
-            if (err) {
-                let output = {
-                    error: {
-                        status: "fail",
-                        name: err.name,
-                        message: err.message,
-                        text: err.toString()
-                    }
-                };
-                let statusCode = err.status || 500;
-                res.json(output);
-                res.send();
-            }
-            else {
-
-//TODO send video by recommender engineget details of all the videos sent by the recommender engine
-                //the engine only sends the name of the videos
-                //find and send all the video information
-
-                res.send(JSON.parse(JSON.stringify(videos)));
-
-
-            }
-        });
+        Videos.getVideos(user.contentLikings, user.tags,res);
 
     });
 });

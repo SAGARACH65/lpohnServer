@@ -1,7 +1,7 @@
 let mongoose = new require('mongoose');
 const uuidv4 = require('uuid/v4');
 let User = require('./User');
-
+let recommend = require('../recommendation_engine/recommender');
 //Define a schema
 let Schema = mongoose.Schema;
 
@@ -17,6 +17,7 @@ let VideosSchema = new Schema({
         type: String
     }],
     uploadedBY: String,
+    imageLink: String
 
 
     //TODO commentts add later
@@ -45,16 +46,53 @@ module.exports.addVideo = function (newVideo, callback) {
 
 };
 
+module.exports.returnVideos = function () {
+    Videos.find({}, function (err, videos) {
+      return videos;
+    });
+};
 
-module.exports.getVideos = function (userProfile, callback) {
-
-    //TODO call the recommender engine here and send back to the user
-    Videos.find({},function (err,videos) {
+module.exports.getVideos = function (userProfile, tags,res) {
 
 
-        //send videos list and videos to the recommendation engine for evaluation
+    Videos.find({}, function (err, videos) {
+
+        if (err) {
+            let output = {
+                error: {
+                    status: "fail",
+                    name: err.name,
+                    message: err.message,
+                    text: err.toString()
+                }
+            };
+            let statusCode = err.status || 500;
+            res.json(output);
+            res.send();
+        }
+        else {
+            let recommendedVideos = recommend.getRecommendedVideos(userProfile, videos, tags);
+            let videoList = [];
+
+            for (let item in recommendedVideos) {
+                let obj = {};
+                if (recommendedVideos[item] > 0) {
+                    videos.map(x => {
+                        if (item === x.title) {
+                            obj['title'] = x.title;
+                            obj['details'] = x.details;
+                            obj['uploadedDate'] = x.uploadedDate;
+                            obj['uploadedBY'] = x.uploadedBY;
+                            obj['imageLink'] = x.imageLink;
+                        }
+                    });
+                }
+                videoList.push(obj);
+
+            }
+            res.send(JSON.parse(JSON.stringify(videoList)));
+        }
     });
 
 
-    //Videos.find({tags: interests}, callback).sort({askedDate: 'desc'});
 };

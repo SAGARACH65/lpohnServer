@@ -37,6 +37,7 @@ require('./models/User');
 require('./models/News');
 require('./models/Questions');
 require('./models/Videos');
+require('./recommendation_engine/recommender');
 
 app.use(require('./routes'));
 
