@@ -7,7 +7,6 @@ module.exports.getRecommendedVideos = function (userLikes, videosList, tags) {
     let normalizedVideo = []; // we add array of objects here
     let arr = [];
 
-    let userProfile = {};
 
 //initially normalizing the tags of the videos
     videosList.map(item => {
@@ -26,15 +25,15 @@ module.exports.getRecommendedVideos = function (userLikes, videosList, tags) {
         let obj = {};
 
         userLikes.map(x => {
-            if (x.title = item.title) {
-                if (userLikes.value !== 0) {
-                    obj["value"] = userLikes.value;
-                    obj = x;
-                }
+            if (x.title === item.title) {
+
+                obj = item;
+                obj['value'] = x.value;
             }
         });
-        arr.push(obj);
-
+        if (obj.title) {
+            arr.push(obj);
+        }
     });
 
 
@@ -62,7 +61,7 @@ module.exports.getRecommendedVideos = function (userLikes, videosList, tags) {
     normalizedVideo.map(item => {
         let articlePredObj = {};
         let pred = 0;
-        for (let x of item) {
+        for (let x in item) {
             if (x !== 'title') {
                 if (!idf[x]) idf[x] = 0;
                 if (!userProfileObj[x]) userProfileObj[x] = 0;
@@ -72,7 +71,9 @@ module.exports.getRecommendedVideos = function (userLikes, videosList, tags) {
             }
         }
         articlePredObj[item.title] = pred;
+        articlePred.push(articlePredObj);
 
     });
-
+    return articlePred;
 };
+
