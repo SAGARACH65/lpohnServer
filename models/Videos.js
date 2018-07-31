@@ -51,6 +51,7 @@ module.exports.getVideos = function (userProfile, callback) {
     //TODO call the recommender engine here and send back to the user
     Videos.find({},function (err,videos) {
 
+
         //send videos list and videos to the recommendation engine for evaluation
     });
 

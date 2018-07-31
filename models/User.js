@@ -31,8 +31,7 @@ let UserSchema = new Schema({
     contentLikings: [{
 
         title: String,
-        value: {type: Number, default: -1},
-
+        value: {type: Number, default: 0}
 
     }],
 

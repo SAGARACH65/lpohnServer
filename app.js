@@ -35,6 +35,8 @@ mongoose.Promise = global.Promise;
 
 require('./models/User');
 require('./models/News');
+require('./models/Questions');
+require('./models/Videos');
 
 app.use(require('./routes'));
 
