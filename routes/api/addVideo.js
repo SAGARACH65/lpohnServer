@@ -19,7 +19,8 @@ router.post('/', function (req, res, next) {
             details: req.body.details,
             uploadedBY: user.username,
             tags: req.body.tags,
-            id:"0"
+            id:"0",
+            imageLink:req.body.imageLink
         });
 
         Videos.addVideo(newVideo,function (err, question) {

@@ -13,7 +13,7 @@ router.post('/', function (req, res, next) {
             res.send({status: "fail", message: 'Unknown Token'});
         }
 
-        Videos.getVideos(user.contentLikings, user.tags,res);
+        Videos.getVideos(user.contentLikings,res);
 
     });
 });

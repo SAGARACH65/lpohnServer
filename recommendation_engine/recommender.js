@@ -16,10 +16,15 @@
 //     ,{title:'article5',tags:['R']}
 //     ,{title:'article6',tags:['BigData','Machine Learning']}
 // ];
-// let tags=['BigData','Python','Learning','R','Machine Learning'];
+
+
+
+//global namespace of tag is ecxlicaity defeined
+//this is only  temporary
+ let tags=['bigdata','python','learning','r','machine_learning','samsung','node.js','bitcoin','football'];
 
 //tags is the global arrray of all tags available for the user
-module.exports.getRecommendedVideos = function (userLikes, videosList, tags) {
+module.exports.getRecommendedVideos = function (userLikes, videosList) {
 
     let normalizedVideo = []; // we add array of objects here
     let arr = [];

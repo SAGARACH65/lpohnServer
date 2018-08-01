@@ -48,11 +48,11 @@ module.exports.addVideo = function (newVideo, callback) {
 
 module.exports.returnVideos = function () {
     Videos.find({}, function (err, videos) {
-      return videos;
+        return videos;
     });
 };
 
-module.exports.getVideos = function (userProfile, tags,res) {
+module.exports.getVideos = function (userProfile, res) {
 
 
     Videos.find({}, function (err, videos) {
@@ -71,25 +71,27 @@ module.exports.getVideos = function (userProfile, tags,res) {
             res.send();
         }
         else {
-            let recommendedVideos = recommend.getRecommendedVideos(userProfile, videos, tags);
+            let recommendedVideos = recommend.getRecommendedVideos(userProfile, videos);
             let videoList = [];
+            recommendedVideos.map(rec => {
+                for (let item in rec) {
+                    let obj = {};
 
-            for (let item in recommendedVideos) {
-                let obj = {};
-                if (recommendedVideos[item] > 0) {
-                    videos.map(x => {
-                        if (item === x.title) {
-                            obj['title'] = x.title;
-                            obj['details'] = x.details;
-                            obj['uploadedDate'] = x.uploadedDate;
-                            obj['uploadedBY'] = x.uploadedBY;
-                            obj['imageLink'] = x.imageLink;
-                        }
-                    });
+                    if (rec[item] > 0) {
+                        videos.map(x => {
+                            if (item === x.title) {
+                                obj['title'] = x.title;
+                                obj['details'] = x.details;
+                                obj['uploadedDate'] = x.uploadedDate;
+                                obj['uploadedBY'] = x.uploadedBY;
+                                obj['imageLink'] = x.imageLink;
+                            }
+                        });
+                        videoList.push(obj);
+                    }
+
                 }
-                videoList.push(obj);
-
-            }
+            });
             res.send(JSON.parse(JSON.stringify(videoList)));
         }
     });
