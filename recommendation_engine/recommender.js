@@ -21,7 +21,7 @@
 
 //global namespace of tag is ecxlicaity defeined
 //this is only  temporary
- let tags=['bigdata','python','learning','r','machine_learning','samsung','node.js','bitcoin','football'];
+ let tags=['bigdata','python','learning','r','machine_learning','samsung','node.js','bitcoin','football','programming','javascript'];
 
 //tags is the global arrray of all tags available for the user
 module.exports.getRecommendedVideos = function (userLikes, videosList) {

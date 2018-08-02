@@ -12,4 +12,5 @@ router.use('/login', require('./login'));
 router.use('/viewVids', require('./viewedVideo'));
 router.use('/addVideo', require('./addVideo'));
 router.use('/getVideo', require('./getVideo'));
+router.use('/addVideoToProfile', require('./addVideoToProfile'));
 module.exports = router;

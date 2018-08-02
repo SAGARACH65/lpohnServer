@@ -95,7 +95,7 @@ module.exports.updateTags = function (token, tags, callback) {
 };
 
 //add the user user watches to their profile
-module.exports.addLikings = function (username, likings, title,value=0, callback) {
+module.exports.addLikings = function (username, likings, title, value = 0, callback) {
 
 
     //TODO later fix this thing
@@ -118,10 +118,10 @@ module.exports.addLikings = function (username, likings, title,value=0, callback
         });
 
         User.update({username: username}, {contentLikings: likings}, callback);
-    }else{
-        User.update({username:username}, {$push: {contentLikings: {title: title,value:value}}},callback);
+    } else {
+        User.update({username:username}, {$push: {contentLikings: {title: title, value: value}}}, callback);
     }
-    };
+};
 
 
 //updates the profile according to the users likes or dislikes
@@ -134,4 +134,7 @@ module.exports.updateLikings = function (title, like, callback) {
             }
         }, callback);
 
+};
+module.exports.addVideoToUserProfile = function (username,title,callback) {
+    User.update({}, {$push: {contentLikings: {title: title, value: 0}}},{multi:true},callback);
 };

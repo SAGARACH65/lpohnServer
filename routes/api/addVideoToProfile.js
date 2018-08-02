@@ -1,31 +1,22 @@
+//this is just used when ever a user watcehs a video such that we can update the user profile with the title of the videos
+
 let express = require('express');
 let router = express.Router();
 
-
-let Videos = require('../../models/Videos');
 let User = require('../../models/User');
 
-let newVideo;
-
 router.post('/', function (req, res, next) {
+
+
+    //1st we find the user name by their token and save their name in the question database
 
     User.getUserByToken(req.query.token || req.body.token, function (err, user) {
         if (err) throw err;
         if (!user) {
             res.send({status: "fail", message: 'Unknown Token'});
         }
-        newVideo = new Videos({
-            title: req.body.title,
-            details: req.body.details,
-            uploadedBY: user.username,
-            tags: req.body.tags,
-            id: "0",
-            imageLink: req.body.imageLink
-        });
 
-        User.addVideoToUserProfile(user.username,req.body.title);
-
-        Videos.addVideo(newVideo, function (err, question) {
+        User.addVideoToUserProfile(user.username,req.body.title, function (err, user) {
             if (err) {
                 let output = {
                     error: {
@@ -40,13 +31,13 @@ router.post('/', function (req, res, next) {
                 res.send();
             }
             else {
-
-
-                res.json({status: "success", message: "Video Addeds"});
+                res.json({status: "success", message: "Video Added to profile"});
                 res.send();
             }
         });
     });
+
+
 });
 
 module.exports = router;

@@ -19,7 +19,6 @@ let VideosSchema = new Schema({
     uploadedBY: String,
     imageLink: String
 
-
     //TODO commentts add later
     // answers: [{
     //     answeredBy: String,
@@ -89,12 +88,9 @@ module.exports.getVideos = function (userProfile, res) {
                         });
                         videoList.push(obj);
                     }
-
                 }
             });
             res.send(JSON.parse(JSON.stringify(videoList)));
         }
     });
-
-
 };
