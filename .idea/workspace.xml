@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b511fe15-40ed-42e0-83f7-ac4df3dd15d1" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/routes/api/addVideoToProfile.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/models/User.js" afterPath="$PROJECT_DIR$/models/User.js" />
-      <change beforePath="$PROJECT_DIR$/models/Videos.js" afterPath="$PROJECT_DIR$/models/Videos.js" />
-      <change beforePath="$PROJECT_DIR$/recommendation_engine/recommender.js" afterPath="$PROJECT_DIR$/recommendation_engine/recommender.js" />
-      <change beforePath="$PROJECT_DIR$/routes/api/addVideo.js" afterPath="$PROJECT_DIR$/routes/api/addVideo.js" />
-      <change beforePath="$PROJECT_DIR$/routes/api/index.js" afterPath="$PROJECT_DIR$/routes/api/index.js" />
+      <change beforePath="$PROJECT_DIR$/routes/api/getVideo.js" afterPath="$PROJECT_DIR$/routes/api/getVideo.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,126 +22,108 @@
     <favorites_list name="lpohnServer" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-          <file leaf-file-name="recommender.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/recommendation_engine/recommender.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="483">
-                  <caret line="23" column="130" lean-forward="false" selection-start-line="23" selection-start-column="130" selection-end-line="23" selection-end-column="130" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Questions.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/models/Questions.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="924">
-                  <caret line="44" column="7" lean-forward="false" selection-start-line="38" selection-start-column="22" selection-end-line="44" selection-end-column="7" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="askQuestion.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/routes/api/askQuestion.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="441">
-                  <caret line="21" column="26" lean-forward="false" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="getQuestions.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/routes/api/getQuestions.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="420">
-                  <caret line="20" column="33" lean-forward="false" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="User.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/models/User.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="297">
-                  <caret line="121" column="38" lean-forward="false" selection-start-line="121" selection-start-column="38" selection-end-line="121" selection-end-column="38" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="addVideoToProfile.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/routes/api/addVideoToProfile.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="819">
-                  <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/routes/api/index.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="294">
-                  <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="30" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Videos.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/models/Videos.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="399">
-                  <caret line="19" column="21" lean-forward="false" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="addVideo.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/routes/api/addVideo.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="525">
-                  <caret line="25" column="49" lean-forward="false" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="viewedVideo.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/routes/api/viewedVideo.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="378">
-                  <caret line="18" column="48" lean-forward="false" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-          <file leaf-file-name="viewedVideo.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/routes/api/viewedVideo.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="231">
-                  <caret line="18" column="6" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="recommender.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/recommendation_engine/recommender.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="882">
+              <caret line="42" column="7" lean-forward="false" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="askQuestion.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/api/askQuestion.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="441">
+              <caret line="21" column="26" lean-forward="false" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getQuestions.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/routes/api/getQuestions.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="20" column="33" lean-forward="false" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/User.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getVideo.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/api/getVideo.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="18" column="3" lean-forward="false" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/api/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="likeDislikeVideo.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/api/likeDislikeVideo.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="28" column="27" lean-forward="false" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addVideoToProfile.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/api/addVideoToProfile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="819">
+              <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Videos.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/Videos.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="19" column="21" lean-forward="false" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="viewedVideo.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/api/viewedVideo.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="18" column="48" lean-forward="false" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -188,7 +165,6 @@
         <option value="$PROJECT_DIR$/routes/api/likeDislikeVideo.js" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/routes/api/Regster.js" />
-        <option value="$PROJECT_DIR$/routes/api/getVideo.js" />
         <option value="$PROJECT_DIR$/recommendation_engine/recommender.js" />
         <option value="$PROJECT_DIR$/models/Videos.js" />
         <option value="$PROJECT_DIR$/routes/api/addVideo.js" />
@@ -196,6 +172,7 @@
         <option value="$PROJECT_DIR$/routes/api/index.js" />
         <option value="$PROJECT_DIR$/routes/api/addVideoToProfile.js" />
         <option value="$PROJECT_DIR$/models/User.js" />
+        <option value="$PROJECT_DIR$/routes/api/getVideo.js" />
       </list>
     </option>
   </component>
@@ -233,6 +210,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -265,8 +244,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -277,7 +254,7 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../loginapp-master" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.pathVariables" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -388,7 +365,14 @@
       <workItem from="1533123573615" duration="2941000" />
       <workItem from="1533126809567" duration="292000" />
       <workItem from="1533127433534" duration="11834000" />
-      <workItem from="1533225918144" duration="23000" />
+      <workItem from="1533225918144" duration="247000" />
+      <workItem from="1533302309050" duration="814000" />
+      <workItem from="1533303861516" duration="377000" />
+      <workItem from="1533304359306" duration="61000" />
+      <workItem from="1533304494424" duration="3053000" />
+      <workItem from="1533477629582" duration="1502000" />
+      <workItem from="1533527850957" duration="526000" />
+      <workItem from="1533529852267" duration="7349000" />
     </task>
     <task id="LOCAL-00001" summary="finished login using jwt, passport">
       <created>1518879515359</created>
@@ -516,11 +500,18 @@
       <option name="project" value="LOCAL" />
       <updated>1533131554297</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="minor improvements">
+      <created>1533226006866</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1533226006867</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="245772000" />
+    <option name="totallyTimeSpent" value="259678000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -533,13 +524,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17451084" sideWeight="0.49405771" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.150913" sideWeight="0.49405771" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3340935" sideWeight="0.50396615" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41847205" sideWeight="0.49603385" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41847205" sideWeight="0.49603385" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25383395" sideWeight="0.5059423" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32839224" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -603,7 +596,8 @@
     <MESSAGE value="recommender engine testing completed" />
     <MESSAGE value="additional modifications to recommender engine" />
     <MESSAGE value="updated average user profile, &#10;made modification to getVideo API" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated average user profile, &#10;made modification to getVideo API" />
+    <MESSAGE value="minor improvements" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor improvements" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -658,35 +652,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/User.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="30" column="38" lean-forward="false" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="41" lean-forward="false" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/api/login.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
@@ -1293,13 +1258,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api/likeDislikeVideo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="22" column="45" lean-forward="true" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/api/getNews.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
@@ -1322,13 +1280,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api/getVideo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/api/answerQuestion.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -1340,15 +1291,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
           <caret line="25" column="49" lean-forward="false" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1360,18 +1302,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api/addVideoToProfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="819">
-          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/recommendation_engine/recommender.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="23" column="130" lean-forward="false" selection-start-line="23" selection-start-column="130" selection-end-line="23" selection-end-column="130" />
+        <state relative-caret-position="882">
+          <caret line="42" column="7" lean-forward="false" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -1384,22 +1318,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api/getQuestions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="20" column="33" lean-forward="false" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api/viewedVideo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="18" column="6" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/Videos.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -1408,10 +1326,518 @@
         </state>
       </provider>
     </entry>
+    <entry file="uml://JavaScript-modules-diagram/C:/Users/Sagar/Desktop/lpohnServer/routes/api/viewedVideo.js">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$/routes/api/viewedVideo.js</OriginalElement>
+          <nodes>
+            <node x="124.0" y="0.0">$PROJECT_DIR$/models/User.js</node>
+            <node x="0.0" y="258.0">$PROJECT_DIR$/node_modules/express/index.js</node>
+            <node x="105.0" y="127.0">$PROJECT_DIR$/routes/api/viewedVideo.js#User#194;C:/Users/Sagar/Desktop/lpohnServer/routes/api/viewedVideo.js#express#128;</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="$PROJECT_DIR$/routes/api/viewedVideo.js#User#194;C:/Users/Sagar/Desktop/lpohnServer/routes/api/viewedVideo.js#express#128;" target="$PROJECT_DIR$/models/User.js">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/routes/api/viewedVideo.js#User#194;C:/Users/Sagar/Desktop/lpohnServer/routes/api/viewedVideo.js#express#128;" target="$PROJECT_DIR$/node_modules/express/index.js">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-14.0" y="-19.0" />
+          <SelectedNodes>
+            <node>$PROJECT_DIR$/routes/api/viewedVideo.js#User#194;C:/Users/Sagar/Desktop/lpohnServer/routes/api/viewedVideo.js#express#128;</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JavaScript-modules-diagram/C:/Users/Sagar/Desktop/lpohnServer/recommendation_engine">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$/recommendation_engine</OriginalElement>
+          <nodes />
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="240.0" y="240.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JavaScript-modules-diagram/C:/Users/Sagar/Desktop/lpohnServer/models">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$/models</OriginalElement>
+          <nodes>
+            <node x="0.0" y="0.0">$PROJECT_DIR$/models/News.js#mongoose#4;</node>
+            <node x="95.0" y="235.0">$PROJECT_DIR$/models/Questions.js#User#79;C:/Users/Sagar/Desktop/lpohnServer/models/Questions.js#uuidv4#46;</node>
+            <node x="310.0" y="138.0">$PROJECT_DIR$/models/User.js#Videos#90;C:/Users/Sagar/Desktop/lpohnServer/models/User.js#bcrypt#40;C:/Users/Sagar/Desktop/lpohnServer/models/User.js#mongoose#4;</node>
+            <node x="290.0" y="366.0">$PROJECT_DIR$/models/Videos.js#User#79;C:/Users/Sagar/Desktop/lpohnServer/models/Videos.js#recommend#109;C:/Users/Sagar/Desktop/lpohnServer/models/Videos.js#uuidv4#46;</node>
+            <node x="512.0" y="169.0">$PROJECT_DIR$/node_modules/bcrypt/bcrypt.js</node>
+            <node x="202.0" y="20.0">$PROJECT_DIR$/node_modules/mongoose/index.js</node>
+            <node x="366.0" y="543.0">$PROJECT_DIR$/recommendation_engine/recommender.js</node>
+            <node x="145.0" y="422.0">$PROJECT_DIR$/node_modules/uuid/v4.js</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="$PROJECT_DIR$/models/Videos.js#User#79;C:/Users/Sagar/Desktop/lpohnServer/models/Videos.js#recommend#109;C:/Users/Sagar/Desktop/lpohnServer/models/Videos.js#uuidv4#46;" target="$PROJECT_DIR$/models/User.js#Videos#90;C:/Users/Sagar/Desktop/lpohnServer/models/User.js#bcrypt#40;C:/Users/Sagar/Desktop/lpohnServer/models/User.js#mongoose#4;">
+              <point x="-4.988485859245884" y="-0.33912952113294637" />
+              <point x="-4.988485859245884" y="-0.33912952113294637" />
+            </edge>
+            <edge source="$PROJECT_DIR$/models/User.js#Videos#90;C:/Users/Sagar/Desktop/lpohnServer/models/User.js#bcrypt#40;C:/Users/Sagar/Desktop/lpohnServer/models/User.js#mongoose#4;" target="$PROJECT_DIR$/models/Videos.js#User#79;C:/Users/Sagar/Desktop/lpohnServer/models/Videos.js#recommend#109;C:/Users/Sagar/Desktop/lpohnServer/models/Videos.js#uuidv4#46;">
+              <point x="5.011540717042198" y="0.0" />
+              <point x="5.0115407170422" y="0.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/models/Questions.js#User#79;C:/Users/Sagar/Desktop/lpohnServer/models/Questions.js#uuidv4#46;" target="$PROJECT_DIR$/node_modules/uuid/v4.js">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/models/Videos.js#User#79;C:/Users/Sagar/Desktop/lpohnServer/models/Videos.js#recommend#109;C:/Users/Sagar/Desktop/lpohnServer/models/Videos.js#uuidv4#46;" target="$PROJECT_DIR$/node_modules/uuid/v4.js">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/models/News.js#mongoose#4;" target="$PROJECT_DIR$/node_modules/mongoose/index.js">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/models/User.js#Videos#90;C:/Users/Sagar/Desktop/lpohnServer/models/User.js#bcrypt#40;C:/Users/Sagar/Desktop/lpohnServer/models/User.js#mongoose#4;" target="$PROJECT_DIR$/node_modules/mongoose/index.js">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/models/Videos.js#User#79;C:/Users/Sagar/Desktop/lpohnServer/models/Videos.js#recommend#109;C:/Users/Sagar/Desktop/lpohnServer/models/Videos.js#uuidv4#46;" target="$PROJECT_DIR$/recommendation_engine/recommender.js">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/models/User.js#Videos#90;C:/Users/Sagar/Desktop/lpohnServer/models/User.js#bcrypt#40;C:/Users/Sagar/Desktop/lpohnServer/models/User.js#mongoose#4;" target="$PROJECT_DIR$/node_modules/bcrypt/bcrypt.js">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/models/Questions.js#User#79;C:/Users/Sagar/Desktop/lpohnServer/models/Questions.js#uuidv4#46;" target="$PROJECT_DIR$/models/User.js#Videos#90;C:/Users/Sagar/Desktop/lpohnServer/models/User.js#bcrypt#40;C:/Users/Sagar/Desktop/lpohnServer/models/User.js#mongoose#4;">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="342.0" y="290.0" />
+          <SelectedNodes>
+            <node>$PROJECT_DIR$/node_modules/uuid/v4.js</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JavaScript-modules-diagram/C:/Users/Sagar/Desktop/lpohnServer/routes">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$/routes</OriginalElement>
+          <nodes>
+            <node x="0.0" y="13.5">$PROJECT_DIR$/models/Questions.js</node>
+            <node x="972.899931858265" y="323.5">$PROJECT_DIR$/routes/api/Regster.js#User#71;C:/Users/Sagar/Desktop/lpohnServer/routes/api/Regster.js#express#4;</node>
+            <node x="938.649931858265" y="13.5">$PROJECT_DIR$/models/User.js</node>
+            <node x="672.899931858265" y="13.5">$PROJECT_DIR$/models/Videos.js</node>
+            <node x="806.899931858265" y="310.0">$PROJECT_DIR$/routes/api/addVideo.js#User#116;C:/Users/Sagar/Desktop/lpohnServer/routes/api/addVideo.js#Videos#71;C:/Users/Sagar/Desktop/lpohnServer/routes/api/addVideo.js#express#4;</node>
+            <node x="1131.899931858265" y="323.5">$PROJECT_DIR$/routes/api/addVideoToProfile.js#User#194;C:/Users/Sagar/Desktop/lpohnServer/routes/api/addVideoToProfile.js#express#128;</node>
+            <node x="438.89993185826495" y="296.5">$PROJECT_DIR$/routes/api/answerQuestion.js#Questions#106;C:/Users/Sagar/Desktop/lpohnServer/routes/api/answerQuestion.js#User#157;C:/Users/Sagar/Desktop/lpohnServer/routes/api/answerQuestion.js#express#4;C:/Users/Sagar/Desktop/lpohnServer/routes/api/answerQuestion.js#mongoose#69;</node>
+            <node x="12.818582651915676" y="296.5">$PROJECT_DIR$/routes/api/askQuestion.js#Questions#106;C:/Users/Sagar/Desktop/lpohnServer/routes/api/askQuestion.js#User#157;C:/Users/Sagar/Desktop/lpohnServer/routes/api/askQuestion.js#express#4;C:/Users/Sagar/Desktop/lpohnServer/routes/api/askQuestion.js#mongoose#69;</node>
+            <node x="1752.899931858265" y="310.0">$PROJECT_DIR$/routes/api/getNews.js#NewsAPI#114;C:/Users/Sagar/Desktop/lpohnServer/routes/api/getNews.js#User#70;C:/Users/Sagar/Desktop/lpohnServer/routes/api/getNews.js#express#4;</node>
+            <node x="250.89993185826506" y="296.5">$PROJECT_DIR$/routes/api/getQuestions.js#Questions#107;C:/Users/Sagar/Desktop/lpohnServer/routes/api/getQuestions.js#User#158;C:/Users/Sagar/Desktop/lpohnServer/routes/api/getQuestions.js#express#4;C:/Users/Sagar/Desktop/lpohnServer/routes/api/getQuestions.js#mongoose#69;</node>
+            <node x="644.899931858265" y="310.0">$PROJECT_DIR$/routes/api/getVideo.js#User#71;C:/Users/Sagar/Desktop/lpohnServer/routes/api/getVideo.js#Videos#112;C:/Users/Sagar/Desktop/lpohnServer/routes/api/getVideo.js#express#4;</node>
+            <node x="2151.2242063492063" y="13.5">$PROJECT_DIR$/node_modules/jsonwebtoken/index.js</node>
+            <node x="1801.2332651915983" y="13.5">$PROJECT_DIR$/node_modules/newsapi/index.js</node>
+            <node x="2359.2242063492063" y="0.0">$PROJECT_DIR$/node_modules/passport-local/lib/index.js#Strategy#194;</node>
+            <node x="1319.774931858265" y="0.0">$PROJECT_DIR$/node_modules/express/lib/express.js#Router#1393;</node>
+            <node x="1901.804924242424" y="954.0">$PROJECT_DIR$/routes/index.js#index.js#62;C:/Users/Sagar/Desktop/lpohnServer/routes/index.js#router#13;C:/Users/Sagar/Desktop/lpohnServer/routes/index.js#users.js#96;</node>
+            <node x="194.0" y="13.5">$PROJECT_DIR$/node_modules/mongoose/index.js</node>
+            <node x="2585.2242063492063" y="13.5">$PROJECT_DIR$/node_modules/passport/lib/index.js</node>
+            <node x="1005.554924242424" y="544.0">$PROJECT_DIR$/routes/api/index.js#Regster.js#154;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#addVideo.js#522;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#addVideoToProfile.js#627;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#answerQuestion.js#259;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#askQuestion.js#203;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#getNews.js#106;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#getQuestions.js#316;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#getVideo.js#570;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#likeDislikeVideo.js#373;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#login.js#426;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#router#13;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#viewedVideo.js#471;</node>
+            <node x="1357.899931858265" y="323.5">$PROJECT_DIR$/routes/api/likeDislikeVideo.js#User#70;C:/Users/Sagar/Desktop/lpohnServer/routes/api/likeDislikeVideo.js#express#4;</node>
+            <node x="2167.7465227673556" y="283.0">$PROJECT_DIR$/routes/api/login.js#LocalStrategy#121;C:/Users/Sagar/Desktop/lpohnServer/routes/api/login.js#User#199;C:/Users/Sagar/Desktop/lpohnServer/routes/api/login.js#express#4;C:/Users/Sagar/Desktop/lpohnServer/routes/api/login.js#jwt#164;C:/Users/Sagar/Desktop/lpohnServer/routes/api/login.js#passport#69;</node>
+            <node x="2007.7465227673558" y="337.0">$PROJECT_DIR$/routes/users.js#express#4;</node>
+            <node x="1564.899931858265" y="323.5">$PROJECT_DIR$/routes/api/viewedVideo.js#User#194;C:/Users/Sagar/Desktop/lpohnServer/routes/api/viewedVideo.js#express#128;</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="$PROJECT_DIR$/routes/api/index.js#Regster.js#154;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#addVideo.js#522;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#addVideoToProfile.js#627;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#answerQuestion.js#259;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#askQuestion.js#203;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#getNews.js#106;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#getQuestions.js#316;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#getVideo.js#570;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#likeDislikeVideo.js#373;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#login.js#426;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#router#13;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#viewedVideo.js#471;" target="$PROJECT_DIR$/routes/api/addVideo.js#User#116;C:/Users/Sagar/Desktop/lpohnServer/routes/api/addVideo.js#Videos#71;C:/Users/Sagar/Desktop/lpohnServer/routes/api/addVideo.js#express#4;">
+              <point x="-28.5" y="-180.0" />
+              <point x="1091.054924242424" y="484.0" />
+              <point x="879.899931858265" y="484.0" />
+              <point x="0.0" y="58.5" />
+            </edge>
+            <edge source="$PROJECT_DIR$/routes/api/Regster.js#User#71;C:/Users/Sagar/Desktop/lpohnServer/routes/api/Regster.js#express#4;" target="$PROJECT_DIR$/node_modules/express/lib/express.js#Router#1393;">
+              <point x="34.75" y="-45.0" />
+              <point x="1077.149931858265" y="253.0" />
+              <point x="1376.7392175725508" y="253.0" />
+              <point x="-15.53571428571422" y="31.5" />
+            </edge>
+            <edge source="$PROJECT_DIR$/routes/api/getQuestions.js#Questions#107;C:/Users/Sagar/Desktop/lpohnServer/routes/api/getQuestions.js#User#158;C:/Users/Sagar/Desktop/lpohnServer/routes/api/getQuestions.js#express#4;C:/Users/Sagar/Desktop/lpohnServer/routes/api/getQuestions.js#mongoose#69;" target="$PROJECT_DIR$/node_modules/mongoose/index.js">
+              <point x="-21.0" y="-72.0" />
+              <point x="313.89993185826506" y="143.0" />
+              <point x="277.5" y="143.0" />
+              <point x="0.0" y="18.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/routes/api/askQuestion.js#Questions#106;C:/Users/Sagar/Desktop/lpohnServer/routes/api/askQuestion.js#User#157;C:/Users/Sagar/Desktop/lpohnServer/routes/api/askQuestion.js#express#4;C:/Users/Sagar/Desktop/lpohnServer/routes/api/askQuestion.js#mongoose#69;" target="$PROJECT_DIR$/node_modules/mongoose/index.js">
+              <point x="-20.125" y="-72.0" />
+              <point x="73.19358265191568" y="143.0" />
+              <point x="221.83333333333326" y="143.0" />
+              <point x="-55.666666666666664" y="18.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/routes/api/index.js#Regster.js#154;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#addVideo.js#522;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#addVideoToProfile.js#627;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#answerQuestion.js#259;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#askQuestion.js#203;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#getNews.js#106;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#getQuestions.js#316;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#getVideo.js#570;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#likeDislikeVideo.js#373;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#login.js#426;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#router#13;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#viewedVideo.js#471;" target="$PROJECT_DIR$/routes/api/login.js#LocalStrategy#121;C:/Users/Sagar/Desktop/lpohnServer/routes/api/login.js#User#199;C:/Users/Sagar/Desktop/lpohnServer/routes/api/login.js#express#4;C:/Users/Sagar/Desktop/lpohnServer/routes/api/login.js#jwt#164;C:/Users/Sagar/Desktop/lpohnServer/routes/api/login.js#passport#69;">
+              <point x="104.5" y="-180.0" />
+              <point x="1224.054924242424" y="524.0" />
+              <point x="2257.7465227673556" y="524.0" />
+              <point x="0.0" y="85.5" />
+            </edge>
+            <edge source="$PROJECT_DIR$/routes/api/likeDislikeVideo.js#User#70;C:/Users/Sagar/Desktop/lpohnServer/routes/api/likeDislikeVideo.js#express#4;" target="$PROJECT_DIR$/models/User.js">
+              <point x="-46.75" y="-45.0" />
+              <point x="1404.649931858265" y="183.0" />
+              <point x="1032.740840949174" y="183.0" />
+              <point x="25.090909090909122" y="18.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/routes/api/index.js#Regster.js#154;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#addVideo.js#522;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#addVideoToProfile.js#627;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#answerQuestion.js#259;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#askQuestion.js#203;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#getNews.js#106;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#getQuestions.js#316;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#getVideo.js#570;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#likeDislikeVideo.js#373;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#login.js#426;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#router#13;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#viewedVideo.js#471;" target="$PROJECT_DIR$/routes/api/likeDislikeVideo.js#User#70;C:/Users/Sagar/Desktop/lpohnServer/routes/api/likeDislikeVideo.js#express#4;">
+              <point x="28.5" y="-180.0" />
+              <point x="1148.054924242424" y="484.0" />
+              <point x="1451.399931858265" y="484.0" />
+              <point x="0.0" y="45.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/routes/api/Regster.js#User#71;C:/Users/Sagar/Desktop/lpohnServer/routes/api/Regster.js#express#4;" target="$PROJECT_DIR$/models/User.js">
+              <point x="-34.75" y="-45.0" />
+              <point x="0.0" y="18.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/routes/api/addVideoToProfile.js#User#194;C:/Users/Sagar/Desktop/lpohnServer/routes/api/addVideoToProfile.js#express#128;" target="$PROJECT_DIR$/models/User.js">
+              <point x="-51.5" y="-45.0" />
+              <point x="1183.399931858265" y="193.0" />
+              <point x="1020.1953864037195" y="193.0" />
+              <point x="12.545454545454504" y="18.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/routes/api/login.js#LocalStrategy#121;C:/Users/Sagar/Desktop/lpohnServer/routes/api/login.js#User#199;C:/Users/Sagar/Desktop/lpohnServer/routes/api/login.js#express#4;C:/Users/Sagar/Desktop/lpohnServer/routes/api/login.js#jwt#164;C:/Users/Sagar/Desktop/lpohnServer/routes/api/login.js#passport#69;" target="$PROJECT_DIR$/node_modules/passport/lib/index.js">
+              <point x="72.0" y="-85.5" />
+              <point x="2329.7465227673556" y="263.0" />
+              <point x="2669.2242063492063" y="263.0" />
+              <point x="0.0" y="18.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/routes/api/login.js#LocalStrategy#121;C:/Users/Sagar/Desktop/lpohnServer/routes/api/login.js#User#199;C:/Users/Sagar/Desktop/lpohnServer/routes/api/login.js#express#4;C:/Users/Sagar/Desktop/lpohnServer/routes/api/login.js#jwt#164;C:/Users/Sagar/Desktop/lpohnServer/routes/api/login.js#passport#69;" target="$PROJECT_DIR$/node_modules/passport-local/lib/index.js#Strategy#194;">
+              <point x="36.0" y="-85.5" />
+              <point x="2293.7465227673556" y="253.0" />
+              <point x="2462.2242063492063" y="253.0" />
+              <point x="0.0" y="31.5" />
+            </edge>
+            <edge source="$PROJECT_DIR$/routes/index.js#index.js#62;C:/Users/Sagar/Desktop/lpohnServer/routes/index.js#router#13;C:/Users/Sagar/Desktop/lpohnServer/routes/index.js#users.js#96;" target="$PROJECT_DIR$/routes/api/index.js#Regster.js#154;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#addVideo.js#522;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#addVideoToProfile.js#627;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#answerQuestion.js#259;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#askQuestion.js#203;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#getNews.js#106;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#getQuestions.js#316;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#getVideo.js#570;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#likeDislikeVideo.js#373;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#login.js#426;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#router#13;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#viewedVideo.js#471;">
+              <point x="-46.33333333333326" y="-58.5" />
+              <point x="1924.9715909090908" y="934.0" />
+              <point x="1119.554924242424" y="934.0" />
+              <point x="0.0" y="180.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/routes/api/getVideo.js#User#71;C:/Users/Sagar/Desktop/lpohnServer/routes/api/getVideo.js#Videos#112;C:/Users/Sagar/Desktop/lpohnServer/routes/api/getVideo.js#express#4;" target="$PROJECT_DIR$/models/Videos.js">
+              <point x="-47.33333333333326" y="-58.5" />
+              <point x="668.5665985249317" y="143.0" />
+              <point x="711.399931858265" y="143.0" />
+              <point x="-38.5" y="18.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/routes/api/answerQuestion.js#Questions#106;C:/Users/Sagar/Desktop/lpohnServer/routes/api/answerQuestion.js#User#157;C:/Users/Sagar/Desktop/lpohnServer/routes/api/answerQuestion.js#express#4;C:/Users/Sagar/Desktop/lpohnServer/routes/api/answerQuestion.js#mongoose#69;" target="$PROJECT_DIR$/models/User.js">
+              <point x="23.25" y="-72.0" />
+              <point x="555.149931858265" y="173.0" />
+              <point x="970.0135682219013" y="173.0" />
+              <point x="-37.636363636363626" y="18.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/routes/api/index.js#Regster.js#154;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#addVideo.js#522;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#addVideoToProfile.js#627;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#answerQuestion.js#259;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#askQuestion.js#203;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#getNews.js#106;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#getQuestions.js#316;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#getVideo.js#570;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#likeDislikeVideo.js#373;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#login.js#426;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#router#13;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#viewedVideo.js#471;" target="$PROJECT_DIR$/routes/api/getVideo.js#User#71;C:/Users/Sagar/Desktop/lpohnServer/routes/api/getVideo.js#Videos#112;C:/Users/Sagar/Desktop/lpohnServer/routes/api/getVideo.js#express#4;">
+              <point x="-47.5" y="-180.0" />
+              <point x="1072.054924242424" y="494.0" />
+              <point x="715.899931858265" y="494.0" />
+              <point x="0.0" y="58.5" />
+            </edge>
+            <edge source="$PROJECT_DIR$/routes/api/index.js#Regster.js#154;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#addVideo.js#522;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#addVideoToProfile.js#627;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#answerQuestion.js#259;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#askQuestion.js#203;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#getNews.js#106;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#getQuestions.js#316;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#getVideo.js#570;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#likeDislikeVideo.js#373;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#login.js#426;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#router#13;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#viewedVideo.js#471;" target="$PROJECT_DIR$/routes/api/addVideoToProfile.js#User#194;C:/Users/Sagar/Desktop/lpohnServer/routes/api/addVideoToProfile.js#express#128;">
+              <point x="9.5" y="-180.0" />
+              <point x="1129.054924242424" y="474.0" />
+              <point x="1234.899931858265" y="474.0" />
+              <point x="0.0" y="45.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/routes/users.js#express#4;" target="$PROJECT_DIR$/node_modules/express/lib/express.js#Router#1393;">
+              <point x="0.0" y="-31.5" />
+              <point x="2077.2465227673556" y="113.0" />
+              <point x="1438.882074715408" y="113.0" />
+              <point x="46.60714285714289" y="31.5" />
+            </edge>
+            <edge source="$PROJECT_DIR$/routes/api/getVideo.js#User#71;C:/Users/Sagar/Desktop/lpohnServer/routes/api/getVideo.js#Videos#112;C:/Users/Sagar/Desktop/lpohnServer/routes/api/getVideo.js#express#4;" target="$PROJECT_DIR$/models/User.js">
+              <point x="0.0" y="-58.5" />
+              <point x="715.899931858265" y="183.0" />
+              <point x="982.5590227673558" y="183.0" />
+              <point x="-25.090909090909122" y="18.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/routes/api/askQuestion.js#Questions#106;C:/Users/Sagar/Desktop/lpohnServer/routes/api/askQuestion.js#User#157;C:/Users/Sagar/Desktop/lpohnServer/routes/api/askQuestion.js#express#4;C:/Users/Sagar/Desktop/lpohnServer/routes/api/askQuestion.js#mongoose#69;" target="$PROJECT_DIR$/models/Questions.js">
+              <point x="-60.375" y="-72.0" />
+              <point x="32.943582651915676" y="263.0" />
+              <point x="29.0" y="263.0" />
+              <point x="-58.0" y="18.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/routes/api/viewedVideo.js#User#194;C:/Users/Sagar/Desktop/lpohnServer/routes/api/viewedVideo.js#express#128;" target="$PROJECT_DIR$/node_modules/express/lib/express.js#Router#1393;">
+              <point x="41.75" y="-45.0" />
+              <point x="1690.149931858265" y="153.0" />
+              <point x="1407.8106461439793" y="153.0" />
+              <point x="15.53571428571422" y="31.5" />
+            </edge>
+            <edge source="$PROJECT_DIR$/routes/api/getNews.js#NewsAPI#114;C:/Users/Sagar/Desktop/lpohnServer/routes/api/getNews.js#User#70;C:/Users/Sagar/Desktop/lpohnServer/routes/api/getNews.js#express#4;" target="$PROJECT_DIR$/node_modules/express/lib/express.js#Router#1393;">
+              <point x="0.0" y="-58.5" />
+              <point x="1826.899931858265" y="123.0" />
+              <point x="1428.524931858265" y="123.0" />
+              <point x="36.25" y="31.5" />
+            </edge>
+            <edge source="$PROJECT_DIR$/routes/api/login.js#LocalStrategy#121;C:/Users/Sagar/Desktop/lpohnServer/routes/api/login.js#User#199;C:/Users/Sagar/Desktop/lpohnServer/routes/api/login.js#express#4;C:/Users/Sagar/Desktop/lpohnServer/routes/api/login.js#jwt#164;C:/Users/Sagar/Desktop/lpohnServer/routes/api/login.js#passport#69;" target="$PROJECT_DIR$/node_modules/jsonwebtoken/index.js">
+              <point x="0.0" y="-85.5" />
+              <point x="2257.7465227673556" y="263.0" />
+              <point x="2245.2242063492063" y="263.0" />
+              <point x="0.0" y="18.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/routes/api/getNews.js#NewsAPI#114;C:/Users/Sagar/Desktop/lpohnServer/routes/api/getNews.js#User#70;C:/Users/Sagar/Desktop/lpohnServer/routes/api/getNews.js#express#4;" target="$PROJECT_DIR$/node_modules/newsapi/index.js">
+              <point x="49.33333333333337" y="-58.5" />
+              <point x="0.0" y="18.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/routes/api/index.js#Regster.js#154;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#addVideo.js#522;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#addVideoToProfile.js#627;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#answerQuestion.js#259;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#askQuestion.js#203;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#getNews.js#106;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#getQuestions.js#316;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#getVideo.js#570;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#likeDislikeVideo.js#373;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#login.js#426;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#router#13;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#viewedVideo.js#471;" target="$PROJECT_DIR$/routes/api/getNews.js#NewsAPI#114;C:/Users/Sagar/Desktop/lpohnServer/routes/api/getNews.js#User#70;C:/Users/Sagar/Desktop/lpohnServer/routes/api/getNews.js#express#4;">
+              <point x="85.5" y="-180.0" />
+              <point x="1205.054924242424" y="514.0" />
+              <point x="1826.899931858265" y="514.0" />
+              <point x="0.0" y="58.5" />
+            </edge>
+            <edge source="$PROJECT_DIR$/routes/api/getQuestions.js#Questions#107;C:/Users/Sagar/Desktop/lpohnServer/routes/api/getQuestions.js#User#158;C:/Users/Sagar/Desktop/lpohnServer/routes/api/getQuestions.js#express#4;C:/Users/Sagar/Desktop/lpohnServer/routes/api/getQuestions.js#mongoose#69;" target="$PROJECT_DIR$/models/User.js">
+              <point x="21.0" y="-72.0" />
+              <point x="355.89993185826506" y="163.0" />
+              <point x="957.4681136764468" y="163.0" />
+              <point x="-50.18181818181813" y="18.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/routes/api/getVideo.js#User#71;C:/Users/Sagar/Desktop/lpohnServer/routes/api/getVideo.js#Videos#112;C:/Users/Sagar/Desktop/lpohnServer/routes/api/getVideo.js#express#4;" target="$PROJECT_DIR$/node_modules/express/lib/express.js#Router#1393;">
+              <point x="47.33333333333326" y="-58.5" />
+              <point x="763.2332651915982" y="233.0" />
+              <point x="1356.024931858265" y="233.0" />
+              <point x="-36.25" y="31.5" />
+            </edge>
+            <edge source="$PROJECT_DIR$/routes/api/index.js#Regster.js#154;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#addVideo.js#522;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#addVideoToProfile.js#627;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#answerQuestion.js#259;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#askQuestion.js#203;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#getNews.js#106;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#getQuestions.js#316;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#getVideo.js#570;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#likeDislikeVideo.js#373;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#login.js#426;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#router#13;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#viewedVideo.js#471;" target="$PROJECT_DIR$/routes/api/askQuestion.js#Questions#106;C:/Users/Sagar/Desktop/lpohnServer/routes/api/askQuestion.js#User#157;C:/Users/Sagar/Desktop/lpohnServer/routes/api/askQuestion.js#express#4;C:/Users/Sagar/Desktop/lpohnServer/routes/api/askQuestion.js#mongoose#69;">
+              <point x="-104.5" y="-180.0" />
+              <point x="1015.054924242424" y="524.0" />
+              <point x="93.31858265191568" y="524.0" />
+              <point x="0.0" y="72.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/routes/api/askQuestion.js#Questions#106;C:/Users/Sagar/Desktop/lpohnServer/routes/api/askQuestion.js#User#157;C:/Users/Sagar/Desktop/lpohnServer/routes/api/askQuestion.js#express#4;C:/Users/Sagar/Desktop/lpohnServer/routes/api/askQuestion.js#mongoose#69;" target="$PROJECT_DIR$/node_modules/express/lib/express.js#Router#1393;">
+              <point x="60.375" y="-72.0" />
+              <point x="153.69358265191568" y="203.0" />
+              <point x="1324.9535032868364" y="203.0" />
+              <point x="-67.32142857142867" y="31.5" />
+            </edge>
+            <edge source="$PROJECT_DIR$/routes/api/login.js#LocalStrategy#121;C:/Users/Sagar/Desktop/lpohnServer/routes/api/login.js#User#199;C:/Users/Sagar/Desktop/lpohnServer/routes/api/login.js#express#4;C:/Users/Sagar/Desktop/lpohnServer/routes/api/login.js#jwt#164;C:/Users/Sagar/Desktop/lpohnServer/routes/api/login.js#passport#69;" target="$PROJECT_DIR$/node_modules/express/lib/express.js#Router#1393;">
+              <point x="-36.0" y="-85.5" />
+              <point x="2221.7465227673556" y="83.0" />
+              <point x="1459.5963604296937" y="83.0" />
+              <point x="67.32142857142867" y="31.5" />
+            </edge>
+            <edge source="$PROJECT_DIR$/routes/api/answerQuestion.js#Questions#106;C:/Users/Sagar/Desktop/lpohnServer/routes/api/answerQuestion.js#User#157;C:/Users/Sagar/Desktop/lpohnServer/routes/api/answerQuestion.js#express#4;C:/Users/Sagar/Desktop/lpohnServer/routes/api/answerQuestion.js#mongoose#69;" target="$PROJECT_DIR$/models/Questions.js">
+              <point x="-69.75" y="-72.0" />
+              <point x="462.14993185826495" y="123.0" />
+              <point x="145.0" y="123.0" />
+              <point x="58.0" y="18.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/routes/api/addVideoToProfile.js#User#194;C:/Users/Sagar/Desktop/lpohnServer/routes/api/addVideoToProfile.js#express#128;" target="$PROJECT_DIR$/node_modules/express/lib/express.js#Router#1393;">
+              <point x="51.5" y="-45.0" />
+              <point x="1286.399931858265" y="263.0" />
+              <point x="1387.0963604296935" y="263.0" />
+              <point x="-5.1785714285715585" y="31.5" />
+            </edge>
+            <edge source="$PROJECT_DIR$/routes/api/index.js#Regster.js#154;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#addVideo.js#522;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#addVideoToProfile.js#627;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#answerQuestion.js#259;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#askQuestion.js#203;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#getNews.js#106;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#getQuestions.js#316;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#getVideo.js#570;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#likeDislikeVideo.js#373;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#login.js#426;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#router#13;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#viewedVideo.js#471;" target="$PROJECT_DIR$/node_modules/express/lib/express.js#Router#1393;">
+              <point x="66.5" y="-180.0" />
+              <point x="1186.054924242424" y="504.0" />
+              <point x="1742.399931858265" y="504.0" />
+              <point x="1742.399931858265" y="143.0" />
+              <point x="1418.1677890011222" y="143.0" />
+              <point x="25.89285714285711" y="31.5" />
+            </edge>
+            <edge source="$PROJECT_DIR$/routes/api/index.js#Regster.js#154;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#addVideo.js#522;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#addVideoToProfile.js#627;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#answerQuestion.js#259;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#askQuestion.js#203;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#getNews.js#106;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#getQuestions.js#316;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#getVideo.js#570;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#likeDislikeVideo.js#373;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#login.js#426;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#router#13;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#viewedVideo.js#471;" target="$PROJECT_DIR$/routes/api/answerQuestion.js#Questions#106;C:/Users/Sagar/Desktop/lpohnServer/routes/api/answerQuestion.js#User#157;C:/Users/Sagar/Desktop/lpohnServer/routes/api/answerQuestion.js#express#4;C:/Users/Sagar/Desktop/lpohnServer/routes/api/answerQuestion.js#mongoose#69;">
+              <point x="-66.5" y="-180.0" />
+              <point x="1053.054924242424" y="504.0" />
+              <point x="531.899931858265" y="504.0" />
+              <point x="0.0" y="72.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/routes/api/addVideo.js#User#116;C:/Users/Sagar/Desktop/lpohnServer/routes/api/addVideo.js#Videos#71;C:/Users/Sagar/Desktop/lpohnServer/routes/api/addVideo.js#express#4;" target="$PROJECT_DIR$/node_modules/express/lib/express.js#Router#1393;">
+              <point x="48.66666666666674" y="-58.5" />
+              <point x="928.5665985249317" y="243.0" />
+              <point x="1366.382074715408" y="243.0" />
+              <point x="-25.89285714285711" y="31.5" />
+            </edge>
+            <edge source="$PROJECT_DIR$/routes/api/answerQuestion.js#Questions#106;C:/Users/Sagar/Desktop/lpohnServer/routes/api/answerQuestion.js#User#157;C:/Users/Sagar/Desktop/lpohnServer/routes/api/answerQuestion.js#express#4;C:/Users/Sagar/Desktop/lpohnServer/routes/api/answerQuestion.js#mongoose#69;" target="$PROJECT_DIR$/node_modules/express/lib/express.js#Router#1393;">
+              <point x="69.75" y="-72.0" />
+              <point x="601.649931858265" y="223.0" />
+              <point x="1345.6677890011222" y="223.0" />
+              <point x="-46.60714285714289" y="31.5" />
+            </edge>
+            <edge source="$PROJECT_DIR$/routes/api/login.js#LocalStrategy#121;C:/Users/Sagar/Desktop/lpohnServer/routes/api/login.js#User#199;C:/Users/Sagar/Desktop/lpohnServer/routes/api/login.js#express#4;C:/Users/Sagar/Desktop/lpohnServer/routes/api/login.js#jwt#164;C:/Users/Sagar/Desktop/lpohnServer/routes/api/login.js#passport#69;" target="$PROJECT_DIR$/models/User.js">
+              <point x="-72.0" y="-85.5" />
+              <point x="2185.7465227673556" y="93.0" />
+              <point x="1070.3772045855376" y="93.0" />
+              <point x="62.727272727272634" y="18.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/routes/api/addVideo.js#User#116;C:/Users/Sagar/Desktop/lpohnServer/routes/api/addVideo.js#Videos#71;C:/Users/Sagar/Desktop/lpohnServer/routes/api/addVideo.js#express#4;" target="$PROJECT_DIR$/models/User.js">
+              <point x="0.0" y="-58.5" />
+              <point x="879.899931858265" y="193.0" />
+              <point x="995.1044773128104" y="193.0" />
+              <point x="-12.545454545454504" y="18.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/routes/api/addVideo.js#User#116;C:/Users/Sagar/Desktop/lpohnServer/routes/api/addVideo.js#Videos#71;C:/Users/Sagar/Desktop/lpohnServer/routes/api/addVideo.js#express#4;" target="$PROJECT_DIR$/models/Videos.js">
+              <point x="-48.66666666666674" y="-58.5" />
+              <point x="831.2332651915982" y="143.0" />
+              <point x="788.399931858265" y="143.0" />
+              <point x="38.5" y="18.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/routes/api/askQuestion.js#Questions#106;C:/Users/Sagar/Desktop/lpohnServer/routes/api/askQuestion.js#User#157;C:/Users/Sagar/Desktop/lpohnServer/routes/api/askQuestion.js#express#4;C:/Users/Sagar/Desktop/lpohnServer/routes/api/askQuestion.js#mongoose#69;" target="$PROJECT_DIR$/models/User.js">
+              <point x="20.125" y="-72.0" />
+              <point x="113.44358265191568" y="153.0" />
+              <point x="944.9226591309922" y="153.0" />
+              <point x="-62.72727272727275" y="18.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/routes/api/answerQuestion.js#Questions#106;C:/Users/Sagar/Desktop/lpohnServer/routes/api/answerQuestion.js#User#157;C:/Users/Sagar/Desktop/lpohnServer/routes/api/answerQuestion.js#express#4;C:/Users/Sagar/Desktop/lpohnServer/routes/api/answerQuestion.js#mongoose#69;" target="$PROJECT_DIR$/node_modules/mongoose/index.js">
+              <point x="-23.25" y="-72.0" />
+              <point x="508.64993185826495" y="113.0" />
+              <point x="333.16666666666674" y="113.0" />
+              <point x="55.66666666666666" y="18.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/routes/api/viewedVideo.js#User#194;C:/Users/Sagar/Desktop/lpohnServer/routes/api/viewedVideo.js#express#128;" target="$PROJECT_DIR$/models/User.js">
+              <point x="-41.75" y="-45.0" />
+              <point x="1606.649931858265" y="163.0" />
+              <point x="1045.2862954946286" y="163.0" />
+              <point x="37.636363636363626" y="18.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/routes/api/likeDislikeVideo.js#User#70;C:/Users/Sagar/Desktop/lpohnServer/routes/api/likeDislikeVideo.js#express#4;" target="$PROJECT_DIR$/node_modules/express/lib/express.js#Router#1393;">
+              <point x="46.75" y="-45.0" />
+              <point x="1498.149931858265" y="173.0" />
+              <point x="1397.4535032868364" y="173.0" />
+              <point x="5.178571428571331" y="31.5" />
+            </edge>
+            <edge source="$PROJECT_DIR$/routes/index.js#index.js#62;C:/Users/Sagar/Desktop/lpohnServer/routes/index.js#router#13;C:/Users/Sagar/Desktop/lpohnServer/routes/index.js#users.js#96;" target="$PROJECT_DIR$/node_modules/express/lib/express.js#Router#1393;">
+              <point x="46.33333333333326" y="-58.5" />
+              <point x="2017.6382575757573" y="934.0" />
+              <point x="2157.2465227673556" y="934.0" />
+              <point x="2157.2465227673556" y="103.0" />
+              <point x="1449.2392175725508" y="103.0" />
+              <point x="56.96428571428578" y="31.5" />
+            </edge>
+            <edge source="$PROJECT_DIR$/routes/api/index.js#Regster.js#154;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#addVideo.js#522;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#addVideoToProfile.js#627;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#answerQuestion.js#259;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#askQuestion.js#203;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#getNews.js#106;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#getQuestions.js#316;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#getVideo.js#570;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#likeDislikeVideo.js#373;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#login.js#426;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#router#13;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#viewedVideo.js#471;" target="$PROJECT_DIR$/routes/api/getQuestions.js#Questions#107;C:/Users/Sagar/Desktop/lpohnServer/routes/api/getQuestions.js#User#158;C:/Users/Sagar/Desktop/lpohnServer/routes/api/getQuestions.js#express#4;C:/Users/Sagar/Desktop/lpohnServer/routes/api/getQuestions.js#mongoose#69;">
+              <point x="-85.5" y="-180.0" />
+              <point x="1034.054924242424" y="514.0" />
+              <point x="334.89993185826506" y="514.0" />
+              <point x="0.0" y="72.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/routes/api/index.js#Regster.js#154;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#addVideo.js#522;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#addVideoToProfile.js#627;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#answerQuestion.js#259;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#askQuestion.js#203;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#getNews.js#106;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#getQuestions.js#316;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#getVideo.js#570;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#likeDislikeVideo.js#373;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#login.js#426;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#router#13;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#viewedVideo.js#471;" target="$PROJECT_DIR$/routes/api/Regster.js#User#71;C:/Users/Sagar/Desktop/lpohnServer/routes/api/Regster.js#express#4;">
+              <point x="-9.5" y="-180.0" />
+              <point x="1110.054924242424" y="474.0" />
+              <point x="1042.399931858265" y="474.0" />
+              <point x="0.0" y="45.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/routes/api/getQuestions.js#Questions#107;C:/Users/Sagar/Desktop/lpohnServer/routes/api/getQuestions.js#User#158;C:/Users/Sagar/Desktop/lpohnServer/routes/api/getQuestions.js#express#4;C:/Users/Sagar/Desktop/lpohnServer/routes/api/getQuestions.js#mongoose#69;" target="$PROJECT_DIR$/models/Questions.js">
+              <point x="-63.0" y="-72.0" />
+              <point x="271.89993185826506" y="133.0" />
+              <point x="87.0" y="133.0" />
+              <point x="0.0" y="18.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/routes/api/index.js#Regster.js#154;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#addVideo.js#522;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#addVideoToProfile.js#627;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#answerQuestion.js#259;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#askQuestion.js#203;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#getNews.js#106;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#getQuestions.js#316;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#getVideo.js#570;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#likeDislikeVideo.js#373;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#login.js#426;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#router#13;C:/Users/Sagar/Desktop/lpohnServer/routes/api/index.js#viewedVideo.js#471;" target="$PROJECT_DIR$/routes/api/viewedVideo.js#User#194;C:/Users/Sagar/Desktop/lpohnServer/routes/api/viewedVideo.js#express#128;">
+              <point x="47.5" y="-180.0" />
+              <point x="1167.054924242424" y="494.0" />
+              <point x="1648.399931858265" y="494.0" />
+              <point x="0.0" y="45.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/routes/api/getNews.js#NewsAPI#114;C:/Users/Sagar/Desktop/lpohnServer/routes/api/getNews.js#User#70;C:/Users/Sagar/Desktop/lpohnServer/routes/api/getNews.js#express#4;" target="$PROJECT_DIR$/models/User.js">
+              <point x="-49.33333333333337" y="-58.5" />
+              <point x="1777.5665985249316" y="133.0" />
+              <point x="1057.831750040083" y="133.0" />
+              <point x="50.18181818181813" y="18.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/routes/api/getQuestions.js#Questions#107;C:/Users/Sagar/Desktop/lpohnServer/routes/api/getQuestions.js#User#158;C:/Users/Sagar/Desktop/lpohnServer/routes/api/getQuestions.js#express#4;C:/Users/Sagar/Desktop/lpohnServer/routes/api/getQuestions.js#mongoose#69;" target="$PROJECT_DIR$/node_modules/express/lib/express.js#Router#1393;">
+              <point x="63.0" y="-72.0" />
+              <point x="397.89993185826506" y="213.0" />
+              <point x="1335.3106461439793" y="213.0" />
+              <point x="-56.96428571428578" y="31.5" />
+            </edge>
+            <edge source="$PROJECT_DIR$/routes/index.js#index.js#62;C:/Users/Sagar/Desktop/lpohnServer/routes/index.js#router#13;C:/Users/Sagar/Desktop/lpohnServer/routes/index.js#users.js#96;" target="$PROJECT_DIR$/routes/users.js#express#4;">
+              <point x="0.0" y="-58.5" />
+              <point x="1971.304924242424" y="924.0" />
+              <point x="2077.2465227673556" y="924.0" />
+              <point x="0.0" y="31.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.6096820809248554" x="1547.0" y="541.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/api/viewedVideo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" column="48" lean-forward="false" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/api/addVideoToProfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="819">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/api/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/api/likeDislikeVideo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="28" column="27" lean-forward="false" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/api/getVideo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" column="3" lean-forward="false" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/models/User.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="121" column="38" lean-forward="false" selection-start-line="121" selection-start-column="38" selection-end-line="121" selection-end-column="38" />
+        <state relative-caret-position="231">
+          <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/api/getQuestions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="20" column="33" lean-forward="false" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
           <folding />
         </state>
       </provider>
