@@ -98,7 +98,7 @@ peer.on('connection', function (conn) {
             let blob = new window.Blob(dataOrg);
             let anchor = document.createElement('a');
             anchor.href = URL.createObjectURL(blob);
-            anchor.download = "downloadssss.mp4";
+            anchor.download = fileType;
             anchor.textContent = 'XXXXXXX';
             anchor.style.display = 'none';
             document.body.appendChild(anchor);

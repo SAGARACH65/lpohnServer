@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b511fe15-40ed-42e0-83f7-ac4df3dd15d1" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/routes/api/getP2PHTML.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/routes/api/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/routes/api/script.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/recommendation_engine/recommender.js" afterPath="$PROJECT_DIR$/recommendation_engine/recommender.js" />
-      <change beforePath="$PROJECT_DIR$/routes/api/index.js" afterPath="$PROJECT_DIR$/routes/api/index.js" />
+      <change beforePath="$PROJECT_DIR$/routes/api/script.js" afterPath="$PROJECT_DIR$/routes/api/script.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -60,8 +56,8 @@
       <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/api/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="102" column="25" lean-forward="true" selection-start-line="102" selection-start-column="25" selection-end-line="102" selection-end-column="25" />
+            <state relative-caret-position="441">
+              <caret line="102" column="32" lean-forward="false" selection-start-line="102" selection-start-column="25" selection-end-line="102" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -376,7 +372,7 @@
       <workItem from="1533868598982" duration="561000" />
       <workItem from="1533907923935" duration="194000" />
       <workItem from="1533909512240" duration="583000" />
-      <workItem from="1533959356765" duration="8412000" />
+      <workItem from="1533959356765" duration="8469000" />
     </task>
     <task id="LOCAL-00001" summary="finished login using jwt, passport">
       <created>1518879515359</created>
@@ -518,11 +514,18 @@
       <option name="project" value="LOCAL" />
       <updated>1533555873867</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="added p2p transfer for the specific filename">
+      <created>1534056403534</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1534056403535</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="279149000" />
+    <option name="totallyTimeSpent" value="279206000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -609,7 +612,8 @@
     <MESSAGE value="updated average user profile, &#10;made modification to getVideo API" />
     <MESSAGE value="minor improvements" />
     <MESSAGE value="fixed minor bug with adding likes and dislikes" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed minor bug with adding likes and dislikes" />
+    <MESSAGE value="added p2p transfer for the specific filename" />
+    <option name="LAST_COMMIT_MESSAGE" value="added p2p transfer for the specific filename" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1857,8 +1861,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/api/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="102" column="25" lean-forward="true" selection-start-line="102" selection-start-column="25" selection-end-line="102" selection-end-column="25" />
+        <state relative-caret-position="441">
+          <caret line="102" column="32" lean-forward="false" selection-start-line="102" selection-start-column="25" selection-end-line="102" selection-end-column="32" />
           <folding />
         </state>
       </provider>
