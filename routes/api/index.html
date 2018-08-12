@@ -19,10 +19,10 @@
 
 
     let dataOrg = [];
-    let s = document.getElementById('a');
-    s.innerHTML = 'sagar';
+
     let count = 0,fileSize=0,fileType='';
     peer.on('connection', function (conn) {
+        console.log(conn);
         conn.on('data', function (data) {
 
             if(count===0){
@@ -49,7 +49,7 @@
                 let blob = new window.Blob(dataOrg);
                 let anchor = document.createElement('a');
                 anchor.href = URL.createObjectURL(blob);
-                anchor.download = "downloadssss."+fileType;
+                anchor.download = fileType;
                 anchor.textContent = 'XXXXXXX';
                 anchor.style.display = 'none';
                 document.body.appendChild(anchor);
@@ -74,7 +74,7 @@
         $('#done-button').on('click', function () {
             let file = $('#a')[0].files[0];
 console.log(file);
-            let con = peer.connect('sagar', {
+            let con = peer.connect('sagarach', {
                 label: "file",
                 reliable: true,
                 serialization: "none"
@@ -94,8 +94,8 @@ console.log(file);
             });
             con.on('open', function () {
                 //  have conn.id
-                let type=file.name.split('.');
-                con.send(type[1]);
+
+                con.send(name);
             });
 
             function readChunk() {

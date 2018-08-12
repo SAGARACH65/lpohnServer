@@ -1,4 +1,4 @@
-let peer = new Peer('sagar');
+let peer = new Peer('sagarxx');
 
 let s = document.getElementById('a');
 s.innerHTML = 'sagar123';
@@ -7,7 +7,7 @@ s.innerHTML = 'sagar123';
     $('#done-button').on('click', function () {
         let file = $('#a')[0].files[0];
 
-        let con = peer.connect('acharya', {
+        let con = peer.connect('acharyaxx', {
             label: "file",
             reliable: true,
             serialization: "none"
@@ -69,20 +69,22 @@ s.innerHTML = 'sagar123';
 // let peer = new Peer('acharya');
 
 let dataOrg = [];
+console.log(peer);
 let x = document.getElementById('a');
 x.innerHTML = 'sagar';
-let count = 0,fileSize=0,fileType='';
+let count = 0, fileSize = 0, fileType = '';
 peer.on('connection', function (conn) {
+    console.log(conn);
     conn.on('data', function (data) {
-        if(count===0){
-            fileSize=data;
-            console.log("filesize"+Math.ceil(fileSize/(64*1024)));
+        if (count === 0) {
+            fileSize = data;
+            console.log("filesize" + Math.ceil(fileSize / (64 * 1024)));
         }
-        else if(count===1){
-            fileType=data;
+        else if (count === 1) {
+            fileType = data;
             console.log(fileType);
         }
-        else{
+        else {
 
             dataOrg.push(data);
             console.log(dataOrg);
@@ -90,8 +92,8 @@ peer.on('connection', function (conn) {
 
         count++;
 
-        if (dataOrg.length>=Math.ceil(fileSize/(64*1024))) {
-            count=0;
+        if (dataOrg.length >= Math.ceil(fileSize / (64 * 1024))) {
+            count = 0;
             let s = document.getElementById('a');
             s.innerHTML = dataOrg;
 
@@ -102,7 +104,7 @@ peer.on('connection', function (conn) {
             anchor.textContent = 'XXXXXXX';
             anchor.style.display = 'none';
             document.body.appendChild(anchor);
-            dataOrg=[];
+            dataOrg = [];
             if (anchor.click) {
                 anchor.click();
 

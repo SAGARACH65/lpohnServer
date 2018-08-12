@@ -49,5 +49,5 @@ module.exports.addAnswer = function (username, answer, questionID, callback) {
 };
 
 module.exports.getQuestions = function (interests, callback) {
-    Questions.find({tags: interests}, callback).sort({askedDate: 'desc'});
+    Questions.find({tags: interests}, callback).sort({askedDate: -1});
 };
